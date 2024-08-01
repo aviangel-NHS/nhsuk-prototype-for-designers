@@ -1,0 +1,233 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  IUS (intrauterine system)
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../contraception",
+      text: "Contraception"
+    }
+  ],
+      href: "../methods-of-contraception",
+      text: "Methods of contraception"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>
+              <span role="text">
+                IUS (intrauterine system)
+                <span role="text">
+                  <span class="nhsuk-caption-xl"><span class="nhsuk-u-visually-hidden"> </span>Brand names: Mirena, Levosert, Kyleena, Jaydess</span>
+                </span>
+              </span>
+            </h1>
+
+          </div>
+        </div>
+
+       
+
+        <article>
+      
+          <div class="nhsuk-u-reading-width">
+           
+            
+            <h4>                      
+              <a href="ius-intrauterine-system/what-is-an-ius-intrauterine-system">
+                What is an IUS (intrauterine system)
+              </a>
+            </h4>
+
+            <h4>
+              <a href="ius-intrauterine-system/where-to-get-an-ius-intrauterine-system">
+                Where to get it
+              </a>
+            </h4>
+
+            <h4>
+              <a href="ius-intrauterine-system/who-can-get-an-ius-intrauterine-system">
+                Who can get it
+              </a>
+            </h4>
+
+            <h4>
+              <a href="ius-intrauterine-system/getting-an-ius-intrauterine-system-fitted-or-removed">
+                Getting it fitted or removed
+              </a>
+            </h4>
+
+            <h4>
+              <a href="ius-intrauterine-system/side-effects-of-an-ius-intrauterine-system">
+                Side effects of an IUS
+              </a>
+            </h4>
+
+
+        
+              
+            
+          </div>
+        
+        
+        
+            </article>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Home</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Health A to Z</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Live Well</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Mental health</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Care and support</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Pregnancy</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS services</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Coronavirus (COVID-19)</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS App</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Find my NHS number</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Your health records</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About the NHS</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Healthcare abroad</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Contact us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Other NHS websites</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Profile editor login</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list nhsuk-footer__meta">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Our policies</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
+

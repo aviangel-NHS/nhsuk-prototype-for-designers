@@ -1,0 +1,265 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Side effects of an IUD (intrauterine device)
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../../contraception",
+      text: "Contraception"
+    },
+    {
+      href: "../../methods-of-contraception",
+      text: "Methods of contraception"
+    }
+  ],
+      href: "../iud-intrauterine-device",
+      text: "IUD (intrauterine device)"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>
+              <span role="text">
+                Side effects of an IUD (intrauterine device)
+                <span role="text">
+                  <span class="nhsuk-caption-xl"><span class="nhsuk-u-visually-hidden"> </span>Also called the copper coil</span>
+                </span>
+              </span>
+            </h1>
+          </div>
+        </div>
+
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+
+                  <section>
+                    <h2>Side effects of an IUD</h2>
+                    <p>An IUD (intrauterine device), also called a copper coil, is a non-hormonal form of contraception. This means there are no hormonal side effects, such as acne, headaches or breast tenderness.</p>
+                    <p>After you get an IUD fitted:</p>
+                    <ul>
+                      <li>you might have some pain and bleeding for a few days</li>
+                      <li>your periods may become heavier, longer or more painful – this may improve after a few months</li>
+                      <li>you have a small chance of getting thrush that keeps coming back – speak to your GP if this happens</li>
+                    </ul>
+                    <p>Your partner should not be able to feel your IUD during sex. If they can, see a doctor or nurse for a check-up.</p>
+                    
+                    <h2>How well does an IUD work</h2>
+                    <p>An IUD is over 99% effective at preventing pregnancy.</p>
+                    <p >This means that less than 1 in 100 women using an IUD as their method of contraception get pregnant each year.</p>
+                    
+                    <h2>Risks of an IUD</h2>
+                    <p>An IUD is very safe, but there are some rare risks, including:</p>
+                    <ul>
+                      <li>pelvic infections, usually within 3 weeks of having an IUD fitted</li>
+                      <li>your IUD moving or being pushed out by the womb, usually within 3 months of having an IUD fitted</li>
+                      <li>damage to the womb</li>
+                      <li><a href="/conditions/ectopic-pregnancy/">ectopic pregnancy</a> in the rare case that your IUD fails</li>
+                    </ul>
+
+                    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+                    <div class="nhsuk-card--care__heading-container">
+                      <h3 class="nhsuk-card--care__heading">
+                        <span role="text">
+                          <span class="nhsuk-u-visually-hidden">Urgent advice: </span>Ask for an urgent GP appointment or get help from NHS 111 if:
+                        </span>
+                      </h3>
+                      <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+                    </div>
+                  
+                    <div class="nhsuk-card__content">
+                    <p>You've had an IUD fitted and:</p>
+                    <ul>
+                      <li>you have pain or tenderness in your lower abdomen</li>
+                      <li>you have a high temperature</li>
+                      <li>you have abnormal or smelly discharge</li>
+                      <li>you have very heavy vaginal bleeding</li>
+                      <li>you think you might be pregnant</li>
+                      <li>you cannot feel the threads of your IUD, or they feel shorter or longer than usual</li>
+                    </ul>
+                    <p>You can call 111 or <a href="https://111.nhs.uk/">get help from 111 online</a>.</p>
+                
+                  </div>
+                </div>
+                
+             
+                
+                <div class="nhsuk-warning-callout">
+                  <h3 class="nhsuk-warning-callout__label">
+                      If you cannot feel your IUD threads
+                  </h3>
+                    <p>If you cannot feel the threads when you check for them you might not be protected against pregnancy, and you may need <a href="/conditions/contraception/emergency-contraception/">emergency contraception</a>.</p>
+                    <p>Use another form of contraception until a doctor or nurse has checked your IUD.</p>
+                </div>
+                
+                        
+                      
+                    
+                  </section>
+
+
+                </div>
+            </div>
+        </article>
+
+
+        <aside class="nhsuk-grid-column">
+          <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+            <h2 class="nhsuk-u-font-size-24 nhsuk-u-padding-bottom-3">
+              More in <a href="../iud-intrauterine-device">IUD coil</a>
+            </h2>
+
+            <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+              <ul class="beta-nhsuk-navigation-sideways__list">
+                
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="what-is-an-iud-intrauterine-device">
+                    What is an IUD
+                  </a>
+                </li>
+                  
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="where-to-get-an-iud-intrauterine-device">
+                    Where to get it
+                  </a>
+                </li>
+                  
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="who-can-get-an-iud-intrauterine-device">
+                    Who can get it
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="getting-an-iud-intrauterine-device-fitted-or-removed">
+                    Getting an IUD fitted or removed
+                  </a>
+                </li>
+                                
+                <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                  Side effects of an IUD
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 13 September 2022
+            <br>
+            Next review due: 13 September 2022
+          </p>
+        </div>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
+

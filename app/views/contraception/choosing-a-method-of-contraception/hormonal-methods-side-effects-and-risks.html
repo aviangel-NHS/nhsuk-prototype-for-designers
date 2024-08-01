@@ -1,0 +1,271 @@
+
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Hormonal methods: side effects and risks
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/nhsuk-homepage",
+      text: "Home"
+    },
+    {
+      href: "../../contraception",
+      text: "Contraception"
+    }
+  ],
+      href: "../choosing-a-method-of-contraception",
+      text: "Choosing a method of contraception"
+})
+}}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper  nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Hormonal methods: side effects and risks</h1>
+    </div>
+  </div>
+
+  <article>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+      <section>
+        <p>Some contraceptives used hormones to prevent pregnancy. Hormonal contraceptives tend to share the same common set of side effects.</p>
+        <h2>Hormonal methods of contraception</h2>
+        <p>Hormonal methods that contain oestrogen and progestogen are:</p>
+        <ul>
+          <li>combined pill (the pill)</li>
+          <li>contraceptive patch</li>
+          <li>vaginal ring</li>
+        </ul>
+        <p>Hormonal methods that contain progestogen only are:</p>
+        <ul>
+          <li>progestogen-only pill (mini pill)</li>
+          <li>IUS (Mirena coil)</li>
+          <li>contraceptive implant</li>
+          <li>contraceptive injection</li>
+        </ul>
+
+        <h3>Side effects of hormonal contraception</h3>
+        <p>Common side effects of hormonal contraception include:</p>
+          <ul>
+            <li>headaches</li>
+            <li>feeling sick (nausea)</li>
+            <li>mood swings</li>
+            <li>weight gain</li>
+            <li>sore breasts or breasts that are painful to the touch</li>
+            <li>acne</li>
+          </ul>
+        <p >These side effects should pass within around 3 months.</p>
+        <p>If side effects are a problem for you, contact a GP or sexual health clinic. A different type of contraception may suit you better.</p>
+
+      </section>
+
+      </div>
+
+    </div>
+  </article>
+
+  <aside class="nhsuk-grid-column">
+    <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-padding-bottom-3">
+        More in <a href="../choosing-a-method-of-contraception">Choosing a method of contraception</a>
+      </h2>
+
+      <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+        <ul class="beta-nhsuk-navigation-sideways__list">
+          
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="how-well-it-works-at-preventing-pregnancy">
+              How well it works at preventing pregnancy
+            </a>
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="how-it-is-used">
+              How it is used
+            </a>
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+            Hormonal methods: side effects and risks
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="non-hormonal-methods-side-effects-and-risks">
+              Non-hormonal methods: side effects and risks
+            </a>
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="effects-on-periods">
+              Effects on periods
+            </a>
+          </li>
+        
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+ 
+  
+
+  <div>
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+      Page last reviewed: 12 August 2022<br>
+      Next review due: 12 August 2025
+    </p>
+  </div>
+  
+</main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Home</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Health A to Z</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Live Well</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Mental health</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Care and support</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Pregnancy</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS services</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Coronavirus (COVID-19)</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS App</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Find my NHS number</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Your health records</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About the NHS</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Healthcare abroad</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Contact us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Other NHS websites</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Profile editor login</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list nhsuk-footer__meta">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Our policies</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
+

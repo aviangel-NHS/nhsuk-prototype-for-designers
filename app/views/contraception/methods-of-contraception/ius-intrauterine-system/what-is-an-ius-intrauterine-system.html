@@ -1,0 +1,216 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  What is an IUS (intrauterine system)
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../../contraception",
+      text: "Contraception"
+    },
+    {
+      href: "../../methods-of-contraception",
+      text: "Methods of contraception"
+    }
+  ],
+      href: "../ius-intrauterine-system",
+      text: "IUS (intrauterine system)"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>
+              <span role="text">
+                What is an IUS (intrauterine system)
+                <span class="nhsuk-caption-xl"><span class="nhsuk-u-visually-hidden"> </span>Brand names: Mirena, Levosert, Kyleena, Jaydess</span>
+              </span>
+              
+            </h1>
+          </div>
+        </div>
+
+       
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+                  <section>
+                    <ul>
+                      <li>An IUS (intrauterine system), also called a hormonal coil, is a small plastic T-shape that a doctor or nurse puts into your womb (uterus). It stops pregnancy by releasing the hormone progestogen into your womb.</li>
+                      <li>This page is about the hormonal coil. For information about the copper coil, see <a href="../iud-intrauterine-device">intrauterine device (IUD).</a></li>
+                      <li>An IUS is over 99% effective. This means that less than 1 in 100 women with an IUS will get pregnant in one year.</li>
+                      <li>An IUS lasts for 3 to 5 years, depending on the type. The types used in England are Mirena, Levosert, Kyleena and Jaydess.</li>
+                      <li>An IUS is safe to use while breastfeeding and can usually be fitted soon after giving birth.</li>
+                      <li>You can get pregnant straight away after an IUS is removed.</li>
+                      <li>An IUS can make periods lighter, shorter, and less painful. It is one of the most effective treatments for stopping heavy periods.</li>
+                      <li>An IUS can be used as part of <a href="https://www.nhs.uk/conditions/hormone-replacement-therapy-hrt/">hormone replacement therapy (HRT)</a> for <a href="https://www.nhs.uk/conditions/menopause/">menopause</a>.</li>
+                    </ul>
+              
+                    <div class="nhsuk-inset-text">
+                      <span class="nhsuk-u-visually-hidden">Information: </span>
+                      <p>An IUS does not stop you getting sexually transmitted infections (STIs). Use a condom every time you have sex to protect you and your partner against STIs.</p>
+                    </div>
+                  </section>
+                        
+               
+                </div>
+            </div>
+        </article>
+
+        <aside class="nhsuk-grid-column">
+          <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+            <h2 class="nhsuk-u-font-size-24 nhsuk-u-padding-bottom-3">
+              More in <a href="../ius-intrauterine-system">IUS (intrauterine system)</a>
+            </h2>
+
+            <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+              <ul class="beta-nhsuk-navigation-sideways__list">
+                
+                <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                  What is an IUS (intrauterine system)?
+                </li>
+                  
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="where-to-get-an-ius-intrauterine-system">
+                    Where to get it
+                  </a>
+                </li>
+                  
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="who-can-get-an-ius-intrauterine-system">
+                    Who can get it
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="getting-an-ius-intrauterine-system-fitted-or-removed">
+                    Getting it fitted or removed
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="side-effects-of-an-ius-intrauterine-system">
+                    Side effects of an IUS
+                  </a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 13 September 2022
+            <br>
+            Next review due: 13 September 2022
+          </p>
+        </div>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
+

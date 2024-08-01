@@ -1,0 +1,243 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Taking the progestogen-only pill (mini pill) after a miscarriage or abortion
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../../contraception",
+      text: "Contraception"
+    },
+    {
+      href: "../../methods-of-contraception",
+      text: "Methods of contraception"
+    }
+  ],
+      href: "../progestogen-only-pill",
+      text: "Progestogen-only pill (mini pill)"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>
+              <span role="text">
+                Taking the progestogen-only pill (mini pill) after a miscarriage or abortion
+              </span>
+            </h1>
+          </div>
+        </div>
+
+       
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+
+                  <section>
+                    <p data-block-key="kr1rw">If you've had a <a href="https://www.nhs.uk/conditions/miscarriage/">miscarriage</a> or <a href="https://www.nhs.uk/conditions/abortion/">abortion</a>, you can start the progestogen-only pill straight away.</p>
+                    <p data-block-key="ge47">If you take it:</p>
+                    <ul>
+                      <li data-block-key="f9kgf">on day 1 to 5 after a miscarriage or abortion, you'll be protected from pregnancy immediately</li>
+                      <li data-block-key="d36o8">on day 6 or later after a miscarriage or abortion, use extra contraception such as condoms until you've taken the pill for 7 days</li>
+                    </ul>
+                  </section>
+
+
+                </div>
+            </div>
+        </article>
+
+        <aside class="nhsuk-grid-column">
+          <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+            <h2 class="nhsuk-u-font-size-24 nhsuk-u-padding-bottom-3">
+              More in
+                <a href="../progestogen-only-pill">Progestogen-only pill (mini pill)</a>
+            </h2>
+
+            <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+              <ul class="beta-nhsuk-navigation-sideways__list">
+                
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="what-is-the-progestogen-only-pill">
+                    What is the progestogen-only pill?
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="where-to-get-the-progestogen-only-pill">
+                    Where to get it
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="who-can-take-the-progestogen-only-pill">
+                    Who can take it
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="how-to-take-the-progestogen-only-pill">
+                    How to take it
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="side-effects-of-the-progestogen-only-pill">
+                    Side effects
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="">
+                    Taking it with other medicines
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="what-to-do-if-you-miss-a-progestogen-only-pill-mini-pill">
+                    If you've missed a pill
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="what-to-do-if-you-take-an-extra-progestogen-only-pill-mini-pill">
+                    If you take an extra pill
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="what-to-do-if-youre-sick-or-have-diarrhoea-when-taking-the-progestogen-only-pill-mini-pill">
+                    If you're sick or have diarrhoea
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="taking-the-progestogen-only-pill-mini-pill-after-having-a-baby">
+                    Taking it after having a baby
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                  Taking it after a miscarriage or abortion
+                </li>
+                
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 2 February 2021
+            <br>
+            Next review due: 2 February 2024
+          </p>
+        </div>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
+

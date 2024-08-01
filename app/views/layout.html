@@ -1,0 +1,91 @@
+<!-- 
+  This is the main layout where you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Extends the layout from /docs/views/template.html -->
+{% extends "template.html" %}
+
+<!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+{% endblock %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Edit the header -->
+<!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+  {{ header({
+    "service": {
+        "name": "Prototype kit",
+        "href": "/"
+      },
+      "showNav": "false",
+      "showSearch": "false"
+    })
+  }}
+{% endblock %}
+
+<!-- Edit the footer -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="beta-nhsuk-footer">
+        <ul class="beta-nhsuk-footer__list nhsuk-footer__list">
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="/home">Home</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Health A to Z</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Symptoms</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Live Well</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Mental health</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Care and support</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Pregnancy</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">NHS services</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Coronavirus (COVID-19)</a></li>
+        </ul>
+
+        <ul class="nhsuk-footer__list beta-nhsuk-footer__list">
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">NHS App</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Find my NHS number</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Your health records</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">About the NHS</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Healthcare abroad</a></li>
+        </ul>
+
+        <ul class="nhsuk-footer__list beta-nhsuk-footer__list">
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="/contact-us/index-v2">Contact us</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Other NHS websites</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Profile editor login</a></li>
+        </ul>
+
+        <ul class="nhsuk-footer__list beta-nhsuk-footer__list beta-nhsuk-footer__list-policies">
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">About us</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Accessibility statement</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="javascript:void(0);">Our policies</a></li>
+          <li class="beta-nhsuk-footer__list-item nhsuk-footer__list-item"><a class="beta-nhsuk-footer__list-item-link nhsuk-footer__list-item-link" href="/">Cookies</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="beta-nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+    <!-- Custom JavaScript files can be added to this file -->
+    {% include "includes/scripts.html" %}
+    <!-- For adding page specific JavsScript -->
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}

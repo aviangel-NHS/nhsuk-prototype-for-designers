@@ -1,0 +1,229 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        NHS.UK prototype kit
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <p class="nhsuk-lede-text">
+        This prototype can be used to mock up NHS.uk pages. It contains various templates and content page examples which can be used to generate other similar type pages.
+      </p>
+
+      <hr>
+
+      <h2>Home pages</h2>
+      <p>
+        <ul>
+          <li><a href="/nhsuk-homepage">Home page</a></li></p>
+        </ul>
+
+      <h2>Health A-Z</h2>
+      <ul>
+        <li><a href="conditions">Health A-Z</a></li>
+
+        <ul>
+          <li><a href="conditions/acne">Acne - Overview</a> </li>
+          <li><a href="conditions/acne/causes">Acne - Causes</a></li>
+          <li><a href="conditions/acne/diagnosis">Acne - Diagnosis</a></li>
+          <li><a href="conditions/acne/treatment">Acne - Treatment</a></li>
+          <li><a href="conditions/acne/complications">Acne - Complications</a></li>
+
+          <br>
+          <li><a href="conditions/menopause">Menopause - Overview</a> </li>
+          <li><a href="conditions/menopause/symptoms">Menopause - Symptoms</a> </li>
+          <li><a href="conditions/menopause/things-you-can-do">Menopause - Things you can do</a> </li>
+          <li><a href="conditions/menopause/treatments">Menopause - Treatment</a> </li>
+          <li><a href="conditions/menopause/help-and-support">Menopause - Help and support</a> </li>
+
+          <br>
+          <li><a href="conditions/chickenpox">Chickenpox</a> </li>
+        </ul>
+
+        
+      </ul>
+
+
+      <hr>
+
+
+        <h2>Live well</h2>
+        <ul>
+          <li><a href="live-well">Live well</a> updated to Live</li>
+          <li><a href="nhsuk-livewell">(Live well)</a> Prototype: old template with images</li>
+        </ul>
+
+        <br>
+
+
+        <h3>Sub-hub pages with sideways navigation (Live well)</h3>
+        <ul>
+          <li><a href="live-well/exercise">Exercise (Live well) - contains sub pages with sideways navigation</a></li>
+          <li><a href="live-well/exercise/exercise-health-benefits">Exercise health benefits</a> - contains sub pages with sideways navigation, bottom active page links not styled, all bulleted, video modules not styled</li>
+        </ul>
+      
+        
+        <hr>
+
+        <h2>Mental health</h2>
+        <ul>
+          <li><a href="nhsuk-mentalhealth">Mental health</a> Live: updated content</li>
+        </ul>
+  
+        <hr>
+
+        <h2>Care and support</h2>
+        <ul>
+          <li><a href="nhsuk-socialcare">(Care and support)</a> Prototype: outdated layout</li>
+        </ul>
+
+        <hr>
+
+        <h2>Pregnancy</h2>
+        <ul>
+          <li><a href="nhsuk-pregnancy">Pregnancy</a> Live: also contains did this info help you modules </li>
+          <li><a href="pregnancy">Pregnancy </a> (Hub)</li>
+          <ul>
+            <li><a href="pregnancy/trying-for-a-baby">Trying for a baby</a> (Sub hub) - ISSUE Breadcrumbs</li>
+
+              <ul>
+                <li><a href="pregnancy/having-a-baby-if-you-are-lgbt-plus">Having a baby if you're LGBT+</a> (Sub hub)</li>
+                <li><a href="pregnancy/having-a-baby-if-you-are-lgbt-plus/ways-to-become-a-parent-if-you-are-lgbt-plus">Ways to become a parent if you're LGBT+</a> (Content page)</li>
+                <li><a href="pregnancy/having-a-baby-if-you-are-lgbt-plus/testosterone-and-pregnancy">Testosterone and pregnancy</a> (Content page)</li>
+                <li><a href="pregnancy/having-a-baby-if-you-are-lgbt-plus/chestfeeding-if-youre-trans-or-non-binary">Chestfeeding if you're trans or non-binary</a> (Content page)</li>
+              </ul>
+            <!-- <li><a href="pregnancy/keeping-well-sideways-nav">Keeping well</a> Uses sideways nav - either fix or remove</li> -->
+
+          </ul>
+        </ul>
+
+
+        <hr>
+
+        <h3>NHS services</h3>
+          <ul>
+            <li><a href="nhsuk-nhs-services">NHS services</a> (Hub)</li>
+          </ul>
+
+        <hr>
+
+        <h3>Other sections</h3>
+
+        <ul>
+          <li><a href="nhs-app">NHS App</a> (Hub)</li>
+        </ul>
+
+        <ul>
+          <li><a href="contraception">Contraception</a> (Hub)</li>
+        </ul>
+
+
+      <hr>
+
+
+
+        
+
+      <h2>Find NHS Services</h2> 
+      <ul>
+        <li><a href="nhs-services">Find a service</a> (Hub)</li>
+        <li><a href="services-near-you">Find a service near you</a> </li>
+
+
+
+        <li>
+            <a href="find-a-service/nhs-services">------ del -----NHS services hub</a>
+        </li>
+        <li>
+            <a href="find-a-service/services-near-you">Find services near you</a>
+        </li>
+        
+        <li>
+          <a href="find-a-service/find-pharmacy-services">Find pharmacy services</a>
+        </li>
+        <li>
+          <a href="find-a-service/find-a-pharmacy">Find a pharmacy</a>
+        </li>
+        <li>
+          <a href="find-a-service/find-a-pharmacy-error">Find a pharmacy - with error message</a>
+        </li>
+        <li>
+          <a href="find-a-service/results-pharmacies">Results for pharmacies near CR8 2AJ</a>
+        </li>
+        <br>
+
+        <li>
+          <a href="find-a-service/find-a-hospital">Find a hospital</a>
+        </li>
+        <li>
+          <a href="find-a-service/find-a-hospital-error">Find a hospital - with error message</a>
+        </li>
+        <li>
+          <a href="find-a-service/results-hospitals">Results for hospitals near W1B 2AE</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a href="find-a-service/find-urgent-care-services">Find urgent care services</a>
+        </li>
+        <li>
+          <a href="find-a-service/find-urgent-care-services-error">Find urgent care services - with error message</a>
+        </li>
+        <li>
+          <a href="find-a-service/results-urgent-care-services">Results for urgent care services near W1B 2AE</a>
+        </li>
+        <br>
+
+        <li>
+          <a href="find-a-service/find-an-ae">Find an Accident and emergency department (A&amp;E)</a>
+        </li>
+      </ul>
+
+      <hr>
+
+      <p><a href="/docs/page-templates">page templates</a> </p>
+     
+
+
+
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

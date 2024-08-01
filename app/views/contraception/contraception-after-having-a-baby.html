@@ -1,0 +1,277 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Contraception after having a baby
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/nhsuk-homepage",
+      text: "Home"
+    }
+    ],
+      href: "../contraception",
+      text: "Contraception"
+})
+}}
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <h1>
+              <span role="text">
+                Contraception after having a baby
+            </h1>
+          </div>
+        </div>
+
+
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+                
+                
+                <section>
+                    <p data-block-key="stl7a">It's possible to become pregnant again very soon after the birth of a baby, even if you're breastfeeding and even if your periods have not returned.</p>
+                    <p data-block-key="ins5v">You usually <a href="/conditions/periods/fertility-in-the-menstrual-cycle/">release an egg (ovulate)</a> about 2 weeks before your period starts, so it's possible to get pregnant before you have a period.</p>
+                </section>
+                
+        
+                <section>
+                    <h2 data-block-key="iowz7">Find out about your options</h2>
+                    <p data-block-key="xnorm">It's important to plan contraception in advance. If you have your baby in hospital, you'll probably discuss contraception with a midwife before you go home.</p>
+                    <p data-block-key="ykkyk">You'll also be asked about contraception at your <a href="/conditions/pregnancy-and-baby/postnatal-check/">postnatal check</a>, which happens 6 to 8 weeks after the birth. But you can discuss it at any time (including while you're still pregnant)  with a:</p>
+                    <ul>
+                      <li data-block-key="gnd7r">health visitor</li>
+                      <li data-block-key="yjanv">midwife</li>
+                      <li data-block-key="s9k0r">GP</li>
+                      <li data-block-key="v3e5a">doctor or nurse at a contraception or sexual health clinic</li>
+                      <li data-block-key="abmo">pharmacist</li>
+                    </ul>
+                    <p data-block-key="q4280">Not all methods of contraception are safe for all women. For example, you should not use some methods if you have certain medical conditions, such as <a href="/conditions/high-blood-pressure-hypertension/">high blood pressure (hypertension)</a>.</p>
+                      <p data-block-key="69gp3">You can discuss with your doctor or nurse which methods are suitable for you.</p>
+                </section>
+                
+                <br>
+                <section>
+                    <h2 data-block-key="hs8u8">Contraception choices immediately after birth</h2>
+                    <p data-block-key="xfqto">At any time after the birth of your baby, as long as you have no medical risks, you can use:</p>
+                    <ul>
+                      <li data-block-key="wjh36"><a href="/conditions/contraception/contraceptive-implant/">a contraceptive implant</a>  (more than 99% effective)</li>
+                      <li data-block-key="6j8z2"><a href="/conditions/contraception/contraceptive-injection/">a contraceptive injection</a> (more than 99% effective)</li>
+                      <li data-block-key="lfne2"><a href="/conditions/contraception/the-pill-progestogen-only/">the progestogen-only pill</a> (99% effective if taken correctly)</li>
+                      <li data-block-key="mi4wa"><a href="/conditions/contraception/male-condoms/">male condoms</a> (98% effective if used correctly)</li>
+                      <li data-block-key="1f9g9"><a href="/conditions/contraception/female-condoms/">female condoms</a> (95% effective if used correctly)</li>
+                    </ul>
+                    <p data-block-key="195zz">Or, you can choose to have an <a href="/conditions/contraception/iud-coil/">IUD (intrauterine device)</a> (more than 99% effective), or an <a href="/conditions/contraception/ius-intrauterine-system/">IUS (intrauterine system)</a> (more than 99% effective) inserted within 48 hours of the birth.</p>
+                    <p data-block-key="spf6j">If  an IUD or IUS is not inserted within 48 hours, you'll usually be advised to wait until 4 weeks after the birth.</p>
+                </section>
+                
+                <br>
+                      
+                <section>
+                    <h2 data-block-key="r0eb0">3 weeks  after birth</h2>
+                    <p data-block-key="n7xa3">If you're not breastfeeding and your healthcare professional has checked you have no medical risk factors for  a <a href="/conditions/blood-clots/">blood clot</a> in a vein, you can  start  to use the:</p>
+                    <ul>
+                      <li data-block-key="ujdbr"><a href="/conditions/contraception/combined-contraceptive-pill/">combined pill</a> (more than 99% effective if taken correctly)</li>
+                      <li data-block-key="mossy"><a href="/conditions/contraception/vaginal-ring/">vaginal ring</a> (more than 99% effective if  used correctly)</li>
+                      <li data-block-key="9s3r8"><a href="/conditions/contraception/contraceptive-patch/">contraceptive  patch</a> (more than 99% effective if used correctly)</li>
+                    </ul><p data-block-key="gt1e4">But if you're breastfeeding, have certain health conditions, or a risk of blood clots, you'll usually  be advised to delay using the combined pill, ring or patch until at least 6 weeks after the birth.</p>
+                </section>
+
+                <br>
+                                  
+                <section>
+                    <h2 data-block-key="pjamq">4 weeks after birth</h2>
+                    <p data-block-key="cmzj1">If you did not have an IUD or IUS inserted within 48 hours of the birth, you can have one inserted later. But you'll usually be advised to wait at least 4 weeks after the birth.</p>
+                </section>
+                  
+                <br>
+
+                <section>
+                    <h2 data-block-key="1etiq">6 weeks after birth</h2>
+                    <p data-block-key="lsbi1">If you're breastfeeding or you've developed certain medical conditions during pregnancy or delivery, you'll need to wait  until at least 6 weeks before you can use the:</p>
+                    <ul>
+                      <li data-block-key="3l5ze">combined pill</li>
+                      <li data-block-key="xcbz1">vaginal ring</li>
+                      <li data-block-key="hytp6">contraceptive patch</li>
+                    </ul>
+                    <p data-block-key="9q6ti">You can usually start using a  <a href="/conditions/contraception/contraceptive-diaphragm-or-cap/">diaphragm or cap</a> (92% to 96% effective if used correctly) around 6 weeks after giving birth.</p>
+                    <p data-block-key="kjd2m">If you used a diaphragm or cap before becoming pregnant, see a GP or a doctor or nurse at a contraception clinic  after the birth, to make sure it still fits correctly.</p>
+                    <p data-block-key="defhk">This is because  childbirth and other factors, such as gaining or losing weight, can mean you need a different size.</p>
+                    <p data-block-key="cr1sq">Find <a href="/service-search/Contraception-information-and-advice/LocationSearch/730">contraception services near you</a>.</p>
+                </section>
+    
+
+                  <div>
+                    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                        Page last reviewed: 29 June 2020
+                        <br>
+                        Next review due: 29 June 2023
+                    </p>
+                  </div>
+          
+
+
+
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Home</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Health A to Z</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Live Well</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Mental health</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Care and support</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Pregnancy</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS services</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Coronavirus (COVID-19)</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS App</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Find my NHS number</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Your health records</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About the NHS</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Healthcare abroad</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Contact us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Other NHS websites</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Profile editor login</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list nhsuk-footer__meta">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Our policies</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
+

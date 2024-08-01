@@ -1,0 +1,231 @@
+
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Who can get an IUS (intrauterine system)
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../../contraception",
+      text: "Contraception"
+    },
+    {
+      href: "../../methods-of-contraception",
+      text: "Methods of contraception"
+    }
+  ],
+      href: "../ius-intrauterine-system",
+      text: "IUS (intrauterine system)"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>
+              <span role="text">
+                Who can get an IUS (intrauterine system)
+                <span role="text">
+                  <span class="nhsuk-caption-xl"><span class="nhsuk-u-visually-hidden"> </span>Brand names: Mirena, Levosert, Kyleena, Jaydess</span>
+                </span>
+            </h1>
+          </div>
+        </div>
+
+
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+                  <section>
+                    <h2>Can I get an IUS</h2>
+                    <p>Most people with a womb can use an IUS (intrauterine system), also called a hormonal coil.</p>
+                    <p>A doctor or nurse will ask about your medical history to check if an IUS is suitable for you.</p>
+                    <p>The IUS may not be suitable if you have:</p>
+                    <ul>
+                      <li>breast cancer, or have had it in the past</li>
+                      <li>cervical cancer or womb (uterus) cancer</li>
+                      <li>a liver condition</li>
+                      <li>unexplained bleeding between periods or after sex</li>
+                      <li>a history of serious heart disease or stroke</li>
+                      <li>a sexually transmitted infection (STI) or pelvic infection</li>
+                      <li>problems with your womb or cervix, such as fibroids</li>
+                    </ul>
+                    <p>If any of these apply to you, speak to the doctor or nurse about your contraception options.</p>
+                    
+                    <h2>IUS and medicines</h2>
+                    <p>An IUS is not affected by most other medicines, including prescription medicines, or herbal remedies.</p>
+                    <p>An IUS may make some types of emergency contraception less effective. If you need emergency contraception while using an IUS, speak to your doctor or nurse for advice.</p>
+                    
+                    <h2>Getting an IUS after giving birth</h2>
+                    <p>An IUS can sometimes be fitted within 48 hours of giving birth. But you'll usually be advised to wait until 4 weeks after birth to have an IUS fitted.</p>
+                    <p>It is possible to get pregnant starting from 3 weeks (21 days) after giving birth. It's important to use another form of contraception, such as condoms, until your IUS is fitted.</p>
+                    
+                    <h3>The IUS and breastfeeding</h3>
+                    <p>It's safe to have an IUS when you're breastfeeding, and it will not affect your milk supply.</p>
+                    <p>Read more about <a href="../../contraception-after-having-a-baby">contraception after having a baby</a>.</p>
+                    
+                    <h2>Getting an IUS after a miscarriage or abortion</h2>
+                    <p>You can get an IUS straight after an abortion or miscarriage. You'll be protected against pregnancy straight away.</p>
+                  </section>
+         
+
+                </div>
+            </div>
+        </article>
+
+        <aside class="nhsuk-grid-column">
+          <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+            <h2 class="nhsuk-u-font-size-24 nhsuk-u-padding-bottom-3">
+              More in <a href="../ius-intrauterine-system">IUS (intrauterine system)</a>
+            </h2>
+
+            <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+              <ul class="beta-nhsuk-navigation-sideways__list">
+                
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="what-is-an-ius-intrauterine-system">
+                    What is an IUS (intrauterine system)?
+                  </a>
+                </li>
+                  
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="where-to-get-an-ius-intrauterine-system">
+                    Where to get it
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                  Who can get it
+                </li>
+                
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="getting-an-ius-intrauterine-system-fitted-or-removed">
+                    Getting it fitted or removed
+                  </a>
+                </li>
+
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a href="side-effects-of-an-ius-intrauterine-system">
+                    Side effects of an IUS
+                  </a>
+                </li>
+                
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 13 September 2022
+            <br>
+            Next review due: 13 September 2022
+          </p>
+        </div>
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
+

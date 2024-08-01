@@ -1,0 +1,87 @@
+{% extends 'template-1.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+  items: [
+    {
+      href: "../nhsuk-homepage",
+      text: "Home"
+    }
+  ],
+      href: "../pregnancy",
+      text: "Pregnancy"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+          <div class="nhsuk-u-reading-width">
+          
+
+            <h1>Having a baby if you’re LGBT+</h1>
+            <p class="nhsuk-lede-text">
+              Find out about starting a family if you're lesbian, gay, bisexual, transgender or <span class="keeptogether">non-binary</span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <section>
+        <ul class="nhsuk-list nhsuk-hub-key-links beta-hub-key-links">
+
+          <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="having-a-baby-if-you-are-lgbt-plus/ways-to-become-a-parent-if-you-are-lgbt-plus">
+              Ways to become a parent if you're LGBT+
+            </a>
+          </li>
+
+          <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="having-a-baby-if-you-are-lgbt-plus/testosterone-and-pregnancy">
+              Testosterone and pregnancy
+            </a>
+          </li>
+
+          <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="having-a-baby-if-you-are-lgbt-plus/chestfeeding-if-youre-trans-or-non-binary">
+              Chestfeeding if you're trans or non-binary
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+    </main>
+  </div>
+</div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+
+
+
+{% block bodyEnd %}
+  {% block scripts %}
+    <!-- Custom JavaScript files can be added to this file -->
+    {% include "includes/scripts.html" %}
+    <!-- For adding page specific JavsScript -->
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}

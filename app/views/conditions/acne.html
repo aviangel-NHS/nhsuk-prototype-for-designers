@@ -1,0 +1,311 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- some custom css padding for the mental health page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+ Acne - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner 
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        
+        <li class="nhsuk-breadcrumb__item">
+            <a href="../nhsuk-homepage" class="nhsuk-breadcrumb__link">Home</a>
+          </li>
+          
+        <li class="nhsuk-breadcrumb__item">
+            <a href="../conditions" class="nhsuk-breadcrumb__link">Health A to Z</a>
+          </li>
+          
+        </ol>
+  
+        <p class="nhsuk-breadcrumb__back">
+          
+            <a href="../conditions" class="nhsuk-breadcrumb__backlink">
+              <span class="nhsuk-u-visually-hidden">Back to </span>
+              Health A to Z
+            </a>
+          
+        </p>
+      </div>
+</nav>
+{% endblock %}
+
+
+<!-- GP surgeries near CR8 2AJ -->
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper  nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1>
+          <span role="text">Overview
+          <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+          <span class="nhsuk-u-visually-hidden"> - </span>
+          Acne
+          </span>
+          </span>
+        </h1>
+
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+          <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+          <ol class="nhsuk-contents-list__list">
+
+
+            <li class="nhsuk-contents-list__item" aria-current="page">
+              <span class="nhsuk-contents-list__current">Overview</span>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="acne/causes">Causes</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="acne/diagnosis">Diagnosis</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="acne/treatment">Treatment</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="acne/complications">Complications</a>
+            </li>
+
+
+          </ol>
+        </nav>
+
+      </div>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <p><b>Acne is a common skin condition that affects most people at some point. It causes spots, oily skin and sometimes skin&nbsp;that's hot or painful to touch.</b></p>
+        </section>
+
+
+        <section>
+
+          <h2 id="symptoms">Symptoms of acne</h2>
+
+          <p data-block-key="u3whe">Acne most commonly develops on the:</p>
+          <ul>
+            <li data-block-key="qwfdc">face – this affects almost everyone with acne</li>
+            <li data-block-key="9j7gy">back – this affects&nbsp;more than&nbsp;half of people with acne</li>
+            <li data-block-key="ndwjk">chest – this affects&nbsp;about 15% of&nbsp;people with acne</li>
+          </ul>
+
+          
+          <figure class="nhsuk-image">
+          <img class="nhsuk-image__img" src="https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-320_4r0CUty.jpg" sizes="
+          (min-width: 1020px) 320px
+          (min-width: 768px) 50vw
+          100vw
+          " srcset="
+          https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-320_4r0CUty.jpg 320w,
+          https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-510_AMCaJP4.jpg 510w,
+          https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-640.jpg 640w,
+          https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-767_hlL6dBL.jpg 767w,
+          https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-1019_AVWZW8U.jpg 1019w,
+          https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-1125_8ys9LJW.jpg 1125w,
+          https://assets.nhs.uk/nhsuk-cms/images/S_0917_acne_M1080444.width-1534_d6DPxCE.jpg 1534w,
+          " alt="Picture of acne spots.">
+
+
+
+          <div class="nhsuk-u-visually-hidden" aria-hidden="true">
+          Credit: <p data-block-key="hdfnr">DR P. MARAZZI/SCIENCE PHOTO LIBRARY https://www.sciencephoto.com/media/250116/view</p>
+
+          </div>
+
+          </figure>
+
+          <h2 data-block-key="mo9np">Types of spots</h2>
+          <p data-block-key="w2f2q">There are 6 main types of spot caused by acne:</p>
+          <ul>
+            <li data-block-key="eelgc">blackheads&nbsp;–&nbsp;small black or yellowish bumps that develop on the skin;&nbsp;they're not filled with dirt, but are black because the inner lining of the hair follicle produces colour</li>
+            <li data-block-key="ton5t">whiteheads&nbsp;– have a similar appearance to blackheads, but&nbsp;may be firmer and will not empty when squeezed</li>
+            <li data-block-key="x558n">papules –&nbsp;small red bumps that may feel tender or sore</li><li data-block-key="z4sie">pustules –&nbsp;similar to papules, but have a white tip in the centre, caused by a build-up of pus</li>
+            <li data-block-key="su1l9">nodules –&nbsp;large hard lumps that build up beneath the surface of the skin and can be&nbsp;painful</li>
+            <li data-block-key="zes4k">cysts –&nbsp;the most severe type of spot caused by acne; they're large pus-filled lumps that look similar to <a href="/conditions/boils/">boils</a>&nbsp;and carry the greatest risk of causing permanent <a href="/conditions/scars/">scarring</a>
+            </li>
+          </ul>
+        </section>
+
+        
+        <section>
+
+
+
+        <h2 id="self-care">Things you can try if you have acne</h2>
+
+
+
+
+          
+            
+
+
+
+        <p data-block-key="gmu1q">These self-help techniques may be useful:</p><ul><li data-block-key="kkq1x">Do not wash affected areas of skin more than twice a day. Frequent washing can irritate the skin and make symptoms worse.</li><li data-block-key="zj5ad">Wash the affected area with&nbsp;a mild soap or cleanser and lukewarm water. Very hot or cold water can make acne worse.</li><li data-block-key="aaonr">Do not try to "clean out" blackheads or squeeze spots.&nbsp;This can make them worse and cause permanent <a href="/conditions/scars/">scarring</a>.</li><li data-block-key="6g5k">Avoid make-up, skincare and suncare products that are oil-based (sometimes labelled “comedogenic”). Use water-based non-comedogenic products, as they’re less likely to block the pores in your skin.</li><li data-block-key="qsspx">Completely remove make-up before going to bed.</li><li data-block-key="jxbv1">If dry skin is a problem, use a fragrance-free water-based <a href="/conditions/emollients/">emollient</a>.</li><li data-block-key="ezd7i">Regular exercise cannot improve your acne, but it can boost your mood and improve your self-esteem.&nbsp;Shower as soon as possible once you finish exercising as sweat can irritate your acne.</li><li data-block-key="d3ig0">Wash your hair regularly&nbsp;and try to avoid letting&nbsp;your hair fall across your face.</li></ul><p data-block-key="rfuk8">Although acne cannot be cured, it can be controlled with treatment.</p><p data-block-key="x3g7h">If you develop <a href="/conditions/acne/diagnosis/">mild acne</a>, it's a good idea to speak to a pharmacist for advice.</p><p data-block-key="ih8cp">Several creams, lotions and gels&nbsp;for treating spots are available to buy from pharmacies.</p><p data-block-key="b7avs">Products containing a low concentration of benzoyl peroxide may be recommended, but be careful as this can bleach clothing.</p><p data-block-key="bg0t3">If your acne is severe or appears on your chest and back,&nbsp;it may need to be treated with&nbsp;<a href="/conditions/antibiotics/">antibiotics</a> or stronger creams that are only&nbsp;available on prescription.</p>
+
+          
+
+
+        </section>
+
+
+        <section>
+
+
+
+
+
+          
+            
+
+
+
+        <h2 data-block-key="rxkfr">When to seek medical advice</h2><p data-block-key="wjfpk">If you have <a href="/conditions/acne/diagnosis/">mild acne</a>, speak to a pharmacist about medicines to treat it.</p><p data-block-key="t8w4t">If these do not control your acne, or it's making you feel very unhappy, see a GP.</p><p data-block-key="4a555">You should see a GP if you have <a href="/conditions/acne/diagnosis/">moderate or severe acne</a> or you develop nodules or cysts, as they need to be treated properly to avoid scarring.&nbsp;</p><p data-block-key="0se9m">Try to resist the temptation to pick or squeeze the spots, as this can lead to permanent scarring.</p><p data-block-key="05u7n">Treatments can take several months to work, so do not expect results overnight. Once they do start to work, the results are usually good.</p>
+
+          
+
+
+        </section>
+
+
+        <section>
+
+
+
+        <h2 id="causes">Why do I have acne?</h2>
+
+
+
+
+          
+            
+
+
+
+        <p data-block-key="scui7">Acne is most commonly&nbsp;linked to the changes in hormone levels during puberty, but can start at any age.</p><p data-block-key="yjxkd">Certain hormones cause&nbsp;the grease-producing glands next to hair follicles in the skin to produce larger amounts of oil (abnormal sebum).</p><p data-block-key="gvzwn">This abnormal sebum changes the activity of a usually harmless skin bacterium called P. acnes, which becomes more aggressive and causes inflammation and pus.</p><p data-block-key="v0bjj">The hormones also thicken the inner lining of the hair follicle, causing blockage of the pores. Cleaning the skin does not help to remove this blockage.</p><h3 data-block-key="wo9tn">Other possible causes</h3><p data-block-key="t1bo8">Acne is known to run in families. If both your mother and father had acne, it's likely that you'll also have acne.</p><p data-block-key="405jx">Hormonal changes, such as those that occur during the menstrual cycle or pregnancy, can also lead to episodes of acne in women.</p><p data-block-key="3zwxr">There's no evidence that poor hygiene or sexual activity play a role in acne.</p>
+
+          
+
+
+        </section>
+
+
+        <section>
+
+
+
+
+
+          
+            
+
+
+
+        <h2 data-block-key="uygpt">Who's affected?</h2><p data-block-key="cu5pe">Acne is very common in teenagers and younger adults. About 95% of people aged 11&nbsp;to 30&nbsp;are affected by acne to some extent.</p><p data-block-key="68347">Acne is most common in girls from the ages of 14&nbsp;to 17, and in boys from the ages of 16&nbsp;to 19.</p><p data-block-key="5113c">Most people have acne on and off for several years before their symptoms start to improve as they get older.</p><p data-block-key="u6w8o">Acne often disappears when a person is in their mid-20s.</p><p data-block-key="j7oo1">In some cases, acne can continue into adult life. About 3% of adults have acne over the age of 35.</p>
+
+          
+
+
+        </section>
+
+
+        <div>
+        <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+        Page last reviewed: 03 January 2023<br>
+        Next review due: 03 January 2026
+        </p>
+        </div>
+
+
+        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+        <ul class="nhsuk-list nhsuk-pagination__list">
+
+
+        <li class="nhsuk-pagination-item--next">
+        <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="acne/causes">
+          <span class="nhsuk-pagination__title">Next</span>
+          <span class="nhsuk-u-visually-hidden">:</span>
+          <span class="nhsuk-pagination__page">Causes</span>
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+            <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+          </svg>
+        </a>
+        </li>
+
+        </ul>
+        </nav>
+
+
+
+
+        </div>
+      </div>
+    </article>
+
+</main>
+</div>
+
+{% endblock %}
+
+
+
+<!-- JavaScript hack to do nothing if search button or link href="" clicked -->
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

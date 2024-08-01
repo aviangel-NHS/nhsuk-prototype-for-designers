@@ -1,0 +1,179 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  IUD (intrauterine device)
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../contraception",
+      text: "Contraception"
+    }
+  ],
+      href: "../methods-of-contraception",
+      text: "Methods of contraception"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <h1>
+              <span role="text">
+                IUD (intrauterine device)
+                <span role="text">
+                  <span class="nhsuk-caption-xl"><span class="nhsuk-u-visually-hidden"> </span>Also called the copper coil</span>
+                </span>
+              </span>
+            </h1>
+          </div>
+        </div>
+
+       
+
+        <article>
+      
+          <div class="nhsuk-u-reading-width">
+            
+            
+            <h4>                      
+              <a href="iud-intrauterine-device/what-is-an-iud-intrauterine-device">
+                What is an IUD
+              </a>
+            </h4>
+
+            <h4>
+              <a href="iud-intrauterine-device/where-to-get-an-iud-intrauterine-device">
+                Where to get it
+              </a>
+            </h4>
+
+            <h4>
+              <a href="iud-intrauterine-device/who-can-get-an-iud-intrauterine-device">
+                Who can get it
+              </a>
+            </h4>
+
+            <h4>
+              <a href="iud-intrauterine-device/getting-an-iud-intrauterine-device-fitted-or-removed">
+                Getting an IUD fitted or removed
+              </a>
+            </h4>
+
+            <h4>
+              <a href="iud-intrauterine-device/side-effects-of-an-iud-intrauterine-device">
+                Side effects of an IUD
+              </a>
+            </h4>
+
+        
+
+          </div>
+        
+        
+        
+            </article>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
+

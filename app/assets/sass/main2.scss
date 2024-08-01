@@ -1,0 +1,150 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/list-border';
+@import 'components/related-nav';
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below...
+///////////////////////////////////////////
+  
+
+// Footer
+.beta-nhsuk-footer {
+    margin-bottom: 15px;
+  
+    @include mq($from: desktop) {
+      display: flex;
+    }
+  }
+  
+  .beta-nhsuk-footer__list {
+    margin-bottom: 25px;
+  
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  
+    @include mq($from: desktop) {
+      padding-right: 40px;
+  
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  
+  .beta-nhsuk-footer__list-policies {
+    @include mq($until: desktop) {
+      border-top: 1px solid $color_nhsuk-grey-5;
+      padding-top: 35px;
+    }
+  }
+  
+  .beta-nhsuk-footer__list-item {
+    @include mq($from: desktop) {
+      float: none;
+      margin-right: 0;
+    }
+  }
+  
+  .beta-nhsuk-footer__list
+  .beta-nhsuk-footer__list-item-link {
+    color: $color_nhsuk-blue;
+  
+    &:hover {
+      color: $nhsuk-link-hover-color;
+      text-decoration: none;
+    }
+  }
+  
+  .beta-nhsuk-footer__copyright {
+    @include nhsuk-font(16);
+    color: $nhsuk-secondary-text-color;
+    margin-bottom: 0;
+  }
+  
+  .nhsuk-footer {
+    border-bottom: 10px solid $color_nhsuk-grey-1;
+  }
+  
+// Header: My account
+
+//.nhsuk-header__search {
+//    float: left;
+//    margin-left: 8px;
+//    position: relative;
+//    text-align: right;
+//}
+
+//.nhsuk-header__search-wrap {
+//    display: block;
+//    line-height: 0;
+//}
+
+
+.nhsuk-header__search:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+@media(min-width: 40.0625em) {
+    .nhsuk-header__search {
+        float:left;
+        margin-left: 8px
+    }
+}
+
+
+.nhsuk-header__search {
+    float: left;
+    margin-left: 8px;
+}
+
+.nhsuk-account__login {
+    margin-right: -8px;
+    float: right;
+    margin-left: 1em;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .nhsuk-account__login {
+    float: right;
+    margin-left: 1em;
+    margin-right: -16px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .nhsuk-account__login--icon {
+    fill: #fff;
+    height: 1.6em;
+    margin-left: 0.6em;
+    position: relative;
+    top: 0.4em;
+    width: 1.6em;
+}
+
+  .nhsuk-account__login--link, .nhsuk-account__login--link:visited, .nhsuk-account__login--link:hover {
+    color: #fff;
+    padding: 1em;
+  }
+  
+
+  .nhsuk-account__login--link:focus .nhsuk-account__login--icon {
+    fill: #212b32;
+  }
+
+@media(min-width: 40.0625em){
+    .nhsuk-account__login {
+    margin-right:-8px
+    }
+  .nhsuk-account__login--link,.nhsuk-account__login--link:hover {
+    margin-right:.6em;
+    padding:.6em}
+}
+
+

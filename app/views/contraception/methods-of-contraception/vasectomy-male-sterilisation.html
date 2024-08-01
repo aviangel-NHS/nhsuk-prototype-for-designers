@@ -1,0 +1,399 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Vasectomy (male sterilisation)
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../contraception",
+      text: "Contraception"
+    }
+  ],
+      href: "../methods-of-contraception",
+      text: "Methods of contraception"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <h1>
+              <span role="text">
+                Vasectomy (male sterilisation)
+            </h1>
+          </div>
+        </div>
+
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+                  <section>
+                    <p>A vasectomy (male sterilisation) is a surgical procedure to cut or seal the tubes that carry a man's sperm to permanently prevent pregnancy.</p>
+                    <p>It's usually carried out under local anaesthetic, where you're awake but don't feel any pain, and takes about 15 minutes.</p>
+                    <p>In rare cases, you may have a general anaesthetic, where you're asleep during the operation.</p>
+                  </section>
+
+                  <section>
+                    <h2>At a glance: facts about vasectomy</h2>
+                    <ul>
+                      <li>A vasectomy is more than 99% effective.</li>
+                      <li>It's considered permanent, so once it's done you don't have to think about contraception again.</li>
+                      <li>It doesn't affect your sex drive or ability to enjoy sex. You'll still have erections and ejaculate, but your semen won't contain sperm.</li>
+                      <li>You'll need to use contraception for at least 8 to 12 weeks after the operation, because sperm will still be in the tubes leading to the penis.</li>
+                      <li>Up to 2 semen tests are done after the operation to make sure that all the sperm have gone.</li>
+                      <li>Your ball sack (scrotum) may become bruised, swollen or painful - some men have ongoing pain in their testicles.</li>
+                      <li>As with any surgery, there's a small risk of infection.</li>
+                      <li>It's very difficult to reverse, so be sure it's right for you.</li>
+                      <li>A vasectomy doesn't protect against sexually transmitted infections (STIs), so you may need to use condoms as well.</li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h2>How it works</h2>
+                    <p>A vasectomy works by stopping sperm getting into a man's semen, the fluid that he ejaculates.</p>
+                    <p>The tubes that carry sperm from a man's testicles to the penis are cut, blocked or sealed with heat.</p>
+                    <p>This means that when a man ejaculates, the semen has no sperm in it and a woman's egg can't be fertilised.</p>
+                  </section>
+                  
+
+                  <section>
+                    <h2>How a vasectomy is carried out</h2>
+                    <p>A vasectomy is a quick and relatively painless surgical procedure. In most cases, you'll be able to return home the same day.</p>
+                    <p>There are 2 types of vasectomy:</p>
+                    <ul>
+                      <li>a conventional vasectomy using a scalpel (surgical knife)</li>
+                      <li>a no-scalpel vasectomy</li>
+                    </ul>
+                    <p>The doctor doing your vasectomy will discuss which option is best for you.</p>
+                    <h3>Conventional vasectomy</h3>
+                    <p>The doctor first numbs your scrotum with a local anaesthetic. They then make 2 small cuts in the skin on each side of your scrotum to reach the tubes that carry sperm out of your testicles (vas deferens).</p>
+                    <p>Each tube is cut and a small section removed. The ends of the tubes are then closed, either by tying them or sealing them using heat.</p>
+                    <p>The cuts are stitched, usually using dissolvable stitches that go away on their own within about a week.</p>
+                    <h3>No-scalpel vasectomy</h3>
+                    <p>The doctor first numbs your scrotum with local anaesthetic. They then make a tiny puncture hole in the skin of your scrotum to reach the tubes. This means they don't need to cut the skin with a scalpel.</p>
+                    <p>The tubes are then closed in the same way as a conventional vasectomy, either by being tied or sealed.</p>
+                    <p>There's little bleeding and no stitches with this procedure. It's thought to be less painful and less likely to cause complications than a conventional vasectomy.</p>
+                  </section>
+      
+                  
+                  <section>
+                    <h2>Before you decide to have a vasectomy</h2>
+                    <p>Your doctor will ask about your circumstances, provide information, and may recommend <a href="/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/counselling/">counselling</a> before agreeing to the procedure.</p>
+                    <p>You should only have a vasectomy if you're certain you don't want any more children or don't want children at all.</p>
+                    <p>If you have a partner, discuss it with them before you decide. If possible, you should both agree to the procedure, but it's not a legal requirement to get your partner's permission.</p>
+                    <p>You may be more likely to be accepted for a vasectomy if you're over 30 and have had children.</p>
+                    <p>But your GP can refuse to carry out the procedure, or refuse to refer you, if they don't believe it's in your best interests.</p>
+                  </section>
+                  
+
+                  <section>
+                    <h2>How long will I have to wait for the operation?</h2>
+                    <p>In most parts of the UK, a vasectomy is available free of charge from the NHS. But waiting lists can be several months, depending on where you live.</p>
+                    <p>Speak to your GP or ask at your local contraception clinic for more information. As waiting lists for vasectomies can be long, some men choose to pay to have the procedure carried out privately.</p>
+                    <p>You can request a male doctor, but this may mean having to wait longer.</p>
+                  </section>
+
+                  
+                  <section>
+                    <h2>Recovering after the operation</h2>
+                    <p>It's common to have some mild discomfort, swelling and bruising of your scrotum for a few days after the vasectomy.</p>
+                    <p>You can take painkillers, such as <a href="/medicines/paracetamol-for-adults/">paracetamol</a>, to help. See a GP if it's still painful after taking painkillers.</p>
+                    <p>It's common to have blood in your semen in the first few ejaculations after a vasectomy. This isn't harmful.</p>
+                    <h3>Underwear</h3>
+                    <p>Wear tight-fitting underwear or athletic support day and night for the first few days to help support your scrotum and ease any discomfort or swelling. Make sure you change your underwear every day.</p>
+                    <h3>Hygiene</h3>
+                    <p>It's usually safe for you to have a bath or shower after your operation - check with your doctor what's suitable for you. Make sure you dry your genital area gently and thoroughly.</p>
+                    <h3>Returning to work</h3>
+                    <p>You can usually return to work 1 or 2 days after a vasectomy, but should avoid sport and heavy lifting for at least a week after the procedure to prevent complications. See a GP if you still have symptoms after a few days.</p>
+                    <h3>Having sex</h3>
+                    <p>Avoid sexual activity for at least 7 days after having a vasectomy.</p>
+                    <p>You'll need to use another method of contraception for at least the first 8 to 12 weeks, as it can take this long to clear the remaining sperm in your tubes.</p>
+                    <p>How long this takes varies from man to man. There's still a risk of pregnancy during this time.</p>
+                  </section>
+                  
+
+                  <section>
+                    <h2>How will I know if my vasectomy has worked?</h2>
+                    <p>About 12 weeks after the procedure, you'll need to produce a sample of semen, which will be tested for sperm.</p>
+                    <p>Once tests have confirmed that your semen is sperm-free, the vasectomy is considered successful and you can stop using additional contraception.</p>
+                    <p>Some men may need 2 tests. But until it's been confirmed that your semen is free of sperm, continue to use another form of contraception.</p>
+                    <p>A few men will continue to have small numbers of sperm in their system, but these sperm don't move and are less likely to make your partner pregnant.</p>
+                    <p>If you're one of these men, your doctor will discuss your options with you.</p>
+                    <p>The test also helps to identify the rare cases in which the tubes naturally rejoin themselves.</p>
+                  </section>
+                 
+                  
+                  <section>
+                    <h2>Is reversal possible?</h2>
+                    <p>It's possible to have a vasectomy reversed. But the procedure isn't always successful and it's rarely funded by the NHS. You have a better chance if it's done soon after the vasectomy.</p>
+                    <p>If a reversal is carried out within 10 years of your vasectomy, the success rate is about 55%. This falls to 25% if your reversal is carried out more than 10 years after.</p>
+                    <p>Even if a surgeon manages to join up the vas deferens tubes again, pregnancy may still not be possible, so you should be certain before going ahead with the vasectomy.</p>
+                  </section>
+                  
+                  
+                  <section>
+                    <h2>Who can have a vasectomy?</h2>
+                    <p>You should only have a vasectomy if you're sure that you don't want more, or any, children. It should always be seen as permanent.</p>
+                    <p>This is because although reversal is sometimes possible, it may not be successful. Even with a successful operation, it may still not be possible to father a child.</p>
+                  </section>
+                  
+
+                  <section>
+                      <h2>Advantages and disadvantages of a vasectomy</h2>
+                      <p>Advantages:</p>
+                      <ul>
+                        <li>a vasectomy is more than 99% effective at preventing pregnancy</li>
+                        <li>long-term effects on your health are rare</li>
+                        <li>it doesn't affect your hormone levels, sex drive or interfere with sex</li>
+                        <li>it may be chosen as a simpler and safer alternative to female sterilisation</li>
+                      </ul>
+                      <p>Disadvantages:</p>
+                      <ul>
+                        <li>a vasectomy can't be easily reversed, and reversals are rarely funded by the NHS</li>
+                        <li>you need to keep using contraception after the operation until tests show your semen is free of sperm</li>
+                        <li>possible complications include a collection of blood inside the scrotum (haematoma), hard lumps called sperm granulomas (caused by sperm leaking from the tubes), an infection, or long-term testicle pain (you may need further surgery)</li>
+                        <li>the vas deferens tubes can reconnect, but this is very rare</li>
+                        <li>vasectomy doesn't protect against STIs, so you may need to use condoms as well</li>
+                      </ul>
+                  </section>
+
+                  
+                  <section>
+                      <h2>Common questions about vasectomy</h2>
+                      <h3>Can I have the operation if I'm single?</h3>
+                      <p>Yes. But if you're under 30, you'll find many surgeons are reluctant to do it in case your circumstances change and you regret it later.</p>
+                      <h3>Will it affect my sex drive?</h3>
+                      <p>No. After a successful vasectomy, your testicles will continue to produce the male hormone (testosterone) just as they did before the procedure.</p>
+                      <p>Your sex drive, sensation and ability to have an erection won't be affected. The only difference is that there'll be no sperm in your semen. Your body still produces sperm, but they're absorbed back into your body without harm.</p>
+                      <h3>Could being sterile affect me emotionally?</h3>
+                      <p>It's a big decision to have a vasectomy, so you should think it over carefully. If you're sure about your decision, you may feel relieved that you don't need to think about contraception and the possibility of pregnancy again.</p>
+                      <p>But if you feel anxious or uncomfortable about the procedure, or you think you would find it hard to accept being infertile, it may not be suitable for you.</p>
+                      <p>See a GP or a professional at a contraception or sexual health clinic to talk about all of your options.</p>
+                      <h3>Is there any risk of vasectomy causing cancer?</h3>
+                      <p>Prostate cancer and testicular cancer can happen in men who have had a vasectomy. There is not enough evidence to be sure if having a vasectomy increases your risk of developing prostate cancer. Speak to a GP if you have any concerns.</p>
+                      <h3 data-block-key="9ferq">Is there any risk of vasectomy causing cancer?</h3>
+                      <p data-block-key="8qw7s">Prostate cancer and testicular cancer can happen in men who have had a vasectomy. There is not enough evidence to be sure if having a vasectomy increases your risk of developing prostate cancer. Speak to a GP if you have any concerns.</p>
+                      <h3>Can I use IVF to father a child?</h3>
+                      <p>If you have a vasectomy and later decide that you want a child, you may be able to use <a href="/conditions/ivf/">IVF</a>. To do this, a surgeon would retrieve sperm from your testicles and use this to fertilise your partner's egg.</p>
+                      <p>But IVF:</p>
+                      <ul>
+                        <li>isn't always successful</li>
+                        <li>may not be available on the NHS</li>
+                        <li>can be expensive if done privately</li>
+                      </ul>
+                      <h3>Can I store sperm in a sperm bank, just in case?</h3>
+                        <p>You could, but as with IVF, sperm stored in a sperm bank can't be relied on to bring about a pregnancy. It can also be expensive.</p>
+                  </section>
+                  
+                  
+                  <section>
+                      <h2>Where to get more information</h2>
+                      <p>You can get more information on having a vasectomy from:</p>
+                      <ul>
+                        <li>GP surgeries</li>
+                        <li>contraception clinics</li>
+                        <li>sexual health or genitourinary medicine (GUM) clinics</li>
+                        <li>some young people's services</li></ul>
+                        <p><a href="/servicedirectories/Pages/ServiceSearchAdditional.aspx?ServiceType=SexualHealthService">Find your nearest sexual health clinic</a></p>
+                  
+                    <div class="healthunlocked_wrapper"><section><header><h2>Online communities on HealthUnlocked</h2></header>
+                      <ul>
+                      <li><img alt="" src="https://images.hu-production.be/avatars/891a14d4e21042e88df0d3288a8c8003_small@2x_100x100.jpg"><div><a href="https://healthunlocked.com/menshealth-penishealth/posts/148488872/﻿penile-enlargement?utm_campaign=mens-health&amp;utm_medium=syndicated&amp;utm_source=nhs.uk&amp;utm_term=web_part_id_2">﻿penile enlargement </a><p>﻿my dong is small, how do I enlarge it? 
+                
+                  </p></div></li><li><img alt="" src="https://images.hu-production.be/avatars/ebaac23b66d64066b94551b5171fc0df_small@2x_100x100.jpg"><div><a href="https://healthunlocked.com/menshealth-penishealth/posts/148488017/sex-after-circumsicion?utm_campaign=mens-health&amp;utm_medium=syndicated&amp;utm_source=nhs.uk&amp;utm_term=web_part_id_2">Sex after circumsicion</a>
+                  <p>I've got mine done about 2 months ago and sex has been awkward to put it…</p></div></li><li><img alt="" src="https://images.hu-production.be/avatars/47a287cef08446e2a5a15989b46c6950_small@2x_100x100.jpg"><div><a href="https://healthunlocked.com/menshealth/posts/148487977/had-a-lump-in-scrotum-for-over-2-years-but-could-be-3yr?utm_campaign=mens-health&amp;utm_medium=syndicated&amp;utm_source=nhs.uk&amp;utm_term=web_part_id_2">Had a Lump in Scrotum for Over 2 Years But Could be 3yr</a>
+                  <p>Hello I'm trying to reach out and I don't know what best forums to go on, but…</p></div></li>
+                  </ul>
+                  <p>Content provided by <a href="https://healthunlocked.com">HealthUnlocked</a></p></section></div><script type="text/javascript">
+                      var hu_webpart_id = 2;
+                      var hu_comm_id = 207;
+                  
+                      var huarr = huarr || [];
+                      huarr.push(['_createWebpart', hu_webpart_id + ',' + hu_comm_id]);
+                      (function () {
+                        var hu = document.createElement('script');
+                        hu.id = 'hu_webpartid' + hu_webpart_id;
+                        hu.type = 'text/javascript'; hu.async = true;
+                        hu.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.healthunlocked.com/choices.v8.js';
+                        var s = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1]; s.parentNode.insertBefore(hu, s);
+                      })();
+                    </script>
+                    <noscript>
+                      <a href="https://healthunlocked.com">Community content from HealthUnlocked</a>
+                    </noscript>
+      
+                  </section>
+                  
+                    
+                  
+                    <div>
+                      <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                          Page last reviewed: 18 March 2021
+                          <br>
+                          Next review due: 18 March 2024
+                      </p>
+                    </div>
+                  
+                  
+              </div>
+
+            </div>
+        </article>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Home</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Health A to Z</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Live Well</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Mental health</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Care and support</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Pregnancy</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS services</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Coronavirus (COVID-19)</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS App</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Find my NHS number</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Your health records</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About the NHS</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Healthcare abroad</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Contact us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Other NHS websites</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Profile editor login</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list nhsuk-footer__meta">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Our policies</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
+

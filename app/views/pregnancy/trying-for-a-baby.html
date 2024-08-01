@@ -1,0 +1,151 @@
+{% extends 'template-1.html' %}
+
+{% block pageTitle %}
+  Trying for a baby
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+  items: [
+    {
+      href: "../nhsuk-homepage",
+      text: "Home"
+    }
+  ],
+      href: "../pregnancy",
+      text: "Pregnancy"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+        <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+        
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+
+      
+  <h1>Trying for a baby</h1>
+  <p class="nhsuk-lede-text">
+    Advice about trying for a baby, including planning a pregnancy and LGBT+ routes into parenthood.
+  </p>
+
+
+    </div>
+
+    <article>
+
+
+  <div class="nhsuk-u-reading-width">
+    
+  </div>
+  
+
+  <div class="nhsuk-u-reading-width">
+    
+      <section>
+        <ul class="nhsuk-list nhsuk-hub-key-links beta-hub-key-links">
+          
+            <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Trying to get pregnant
+              </a>
+            </li>
+         
+          
+             <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Getting pregnant if you have a mental health condition
+              </a>
+            </li>
+          
+             <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Planning your pregnancy
+              </a>
+            </li>
+          
+            <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Doing a pregnancy test
+              </a>
+            </li>
+          
+            <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Signs and symptoms of pregnancy
+              </a>
+            </li>
+          
+            <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                How long does it usually take to get pregnant?
+              </a>
+            </li>
+          
+            <li class="nhsuk-u-font-size-22 nhsuk-u-font-weight-bold nhsuk-u-padding-bottom-2 nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Planning another pregnancy
+              </a>
+            </li>
+          
+        </ul>
+      </section>
+    
+
+    <div class="nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+      
+    </div>
+
+    
+      
+        <div class="nhsuk-u-margin-top-6  beta-hub-border-top ">
+  <div class="beta-hub-related-links-title">
+    <h2 class="nhsuk-heading-s ">Related links</h2>
+  </div>
+  <nav role="navigation">
+    <ul class="beta-hub-related-links">
+      
+        <li class="beta-hub-related-links__list-item">
+          <a href="">
+            Infertility help and support
+          </a>
+          
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+
+      
+  </div>
+
+    </article>
+
+  </div>
+</div>
+
+      </main>
+    </div> 
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+
+
+
+{% block bodyEnd %}
+  {% block scripts %}
+    <!-- Custom JavaScript files can be added to this file -->
+    {% include "includes/scripts.html" %}
+    <!-- For adding page specific JavsScript -->
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}

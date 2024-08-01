@@ -1,0 +1,308 @@
+
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  How it is used
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/nhsuk-homepage",
+      text: "Home"
+    },
+    {
+      href: "../../contraception",
+      text: "Contraception"
+    }
+  ],
+      href: "../choosing-a-method-of-contraception",
+      text: "Choosing a method of contraception"
+})
+}}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper  nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>How it is used</h1>
+    </div>
+  </div>
+
+  <article>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <p data-block-key="v9nfe">Issues you may have around using different methods of contraception may include:</p>
+          <ul>
+            <li data-block-key="cta8t">how often do you need to use it?</li>
+            <li data-block-key="7hlq6">can you use it yourself at home or will you need to see a doctor or nurse?</li>
+            <li data-block-key="bjphm">what impact will it have on your sex life?</li>
+          </ul>
+            <h2 data-block-key="b92p6">How often it is used</h2>
+            <p data-block-key="esll9">You need to use some methods of contraception every time you have sex. Others involve taking a pill every day, or changing a patch or vaginal ring every week. Some methods, called long-acting methods, can last for several months or years.</p>
+            <h3 data-block-key="dq5rs">Every time you have sex</h3>
+            <p data-block-key="akctc">Methods are:</p>
+            <ul>
+              <li data-block-key="2bie">condoms</li>
+              <li data-block-key="b9t36">diaphragm</li>
+              <li data-block-key="eilee">cap</li>
+            </ul>
+              <h3 data-block-key="ftvu9">Every day or most days</h3>
+              <p data-block-key="ek4m3">Methods are:</p>
+              <ul>
+                <li data-block-key="hg94">combined pill (the pill)</li>
+                <li data-block-key="7p6pj">progestogen-only pill (the mini pill)</li>
+              </ul>
+              <h3 data-block-key="aqb07">Every week</h3>
+              <p data-block-key="ctumc">Methods are:</p>
+              <ul>
+                <li data-block-key="7tssc">contraceptive patch</li>
+                <li data-block-key="9e1s8">vaginal ring</li>
+              </ul>
+                <h3 data-block-key="5536d">Long-acting methods</h3>
+                <p data-block-key="1ni39">Methods are:</p>
+                <ul>
+                  <li data-block-key="filf5">IUD (copper coil), which lasts for 5 or 10 years depending on the type</li>
+                  <li data-block-key="4tec1">IUS (Mirena coil), which lasts for 3 or 5 years depending on the type</li>
+                  <li data-block-key="l8n1">contraceptive implant, which lasts for 3 years</li>
+                  <li data-block-key="deg9n">contraceptive injection, which lasts for 8 or 13 weeks depending on the type</li>
+                </ul>
+                <h3 data-block-key="329sj">Permanent methods</h3>
+                <p data-block-key="1qh4b">Methods are:</p>
+                <ul>
+                  <li data-block-key="eade">vasectomy</li>
+                  <li data-block-key="7jki4">female sterilisation</li>
+                </ul>
+                <h2 data-block-key="8ldtd">How you use it</h2>
+                <p data-block-key="aek2u">You can use, or take, some methods of contraception yourself. With others, you need to see a doctor or nurse to give it to you.</p>
+                <h3 data-block-key="d9ao6">Methods you can use yourself</h3>
+                <p data-block-key="erbdd">Methods are:</p>
+                <ul>
+                  <li data-block-key="ffmek">combined pill</li>
+                  <li data-block-key="6a4lv">progestogen-only pill</li>
+                  <li data-block-key="1r15h">contraceptive patch</li>
+                  <li data-block-key="5on1s">condoms</li>
+                  <li data-block-key="2un0s">diaphragm</li>
+                  <li data-block-key="2rsj2">cap</li>
+                  <li data-block-key="4m1fm">vaginal ring</li>
+                </ul>
+                  <h3 data-block-key="5t67q">Methods that a doctor or nurse give you</h3>
+                  <p data-block-key="bc563">Methods are:</p>
+                  <ul>
+                    <li data-block-key="dkvsq">IUD (copper coil)</li>
+                    <li data-block-key="46ii6">IUS (Mirena coil)</li>
+                    <li data-block-key="b1ooa">contraceptive implant</li>
+                    <li data-block-key="cmm4q">contraceptive injection</li>
+                  </ul>
+                    <h2 data-block-key="212do">Contraception and sex</h2>
+                    <p data-block-key="6mo9t">Some methods need to be used every time you have sex, while others you don't have to think about before having sex.</p>
+                    <p data-block-key="5hauf">You need to put a condom in place immediately before you have vaginal sex. You can put a diaphragm or cap in a few hours before having sex.</p>
+                    <p data-block-key="eighs">You do not need to think about other methods of contraception every time you have sex. This applies to contraceptive pills and patches, vaginal rings, contraceptive implants and injections, and IUD and IUS coils.</p>
+                    <p data-block-key="74kin">If a partner can feel your IUD or IUS during sex it could mean your coil has moved out of a place. Contact a GP or sexual health clinic for advice.</p>
+                    <h3 data-block-key="a1cfl">Sexually transmitted infections (STIs)</h3>
+                    <p data-block-key="copnk">Only condoms can protect you against sexually transmitted infections (STIs).</p>
+                    <p data-block-key="bvh8s">STIs are not only spread through penetrative sex (penis in vagina sex). Some infections can be spread during oral sex, anal sex and skin to skin contact.</p>
+                    <h3 data-block-key="8tpgq">Side effects and sex</h3>
+                    <p data-block-key="78nm5">Some methods of contraception can cause side effects like headaches or mood swings for a few months after you start them.</p>
+                    <p data-block-key="fvm9e">If you are concerned that your method of contraception is causing problems with your sex life, then talk to a GP or a doctor or nurse at a sexual health clinic. They may be able to recommend a different method of contraception for you.</p>
+        </section>
+      </div>
+
+    </div>
+  </article>    
+
+
+
+  <aside class="nhsuk-grid-column">
+    <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-padding-bottom-3">
+        More in <a href="../choosing-a-method-of-contraception">Choosing a method of contraception</a>
+      </h2>
+
+      <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+        <ul class="beta-nhsuk-navigation-sideways__list">
+          
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="how-well-it-works-at-preventing-pregnancy">
+              How well it works at preventing pregnancy
+            </a>
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+            How it is used
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="hormonal-methods-side-effects-and-risks">
+              Hormonal methods: side effects and risks
+            </a>
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="non-hormonal-methods-side-effects-and-risks">
+              Non-hormonal methods: side effects and risks
+            </a>
+          </li>
+
+          <li class="beta-nhsuk-navigation-sideways__item">
+            <a href="effects-on-periods">
+              Effects on periods
+            </a>
+          </li>
+        
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+
+  
+</main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Home</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Health A to Z</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Live Well</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Mental health</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Care and support</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Pregnancy</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS services</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Coronavirus (COVID-19)</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS App</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Find my NHS number</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Your health records</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About the NHS</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Healthcare abroad</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Contact us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Other NHS websites</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Profile editor login</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list nhsuk-footer__meta">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Our policies</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
+

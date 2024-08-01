@@ -1,0 +1,326 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Natural family planning
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "https://www.nhs.uk/conditions/",
+      text: "Health A to Z"
+    },
+    {
+      href: "../contraception",
+      text: "Contraception"
+    }
+  ],
+      href: "../methods-of-contraception",
+      text: "Methods of contraception"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <h1>
+              <span role="text">
+                Natural family planning (fertility awareness)
+              </span>
+            </h1>
+          </div>
+        </div>
+
+
+
+        <article>
+            <div class="nhsuk-grid-row">
+
+              <div class="nhsuk-grid-column-two-thirds">
+
+
+                <section>
+                  <p>Natural family planning (or "fertility awareness") is a method of contraception where a woman monitors and records different fertility signals during her menstrual cycle to work out when she's likely to get pregnant..</p>
+                  <p>This page briefly explains how it works and what you would need to do, but is not a substitute for instruction and training from a specialist natural family planning teacher.</p>
+                </section>
+
+                <section>
+                  <h2>At a glance: facts about natural family planning</h2>
+                  <ul>
+                      <li>If natural family planning is followed consistently and correctly, it can be up to 99% effective (1 to 9 women in 100 who use natural family planning will get pregnant in 1 year).</li>
+                      <li>It is less effective if the instructions are not carefully followed.</li>
+                      <li>There are no physical side effects, and you can use it to plan when you get pregnant.</li>
+                      <li>You have to keep a daily record of your fertility signals, such as your temperature and the fluids coming from your cervix - it takes 3 to 6 menstrual (monthly) cycles to learn the method.</li>
+                      <li>Your fertility signals can be affected by illness, stress and travel.</li>
+                      <li>If you want to have sex during the time when you might get pregnant, you'll need to use contraception, such as a condom, diaphragm or cap.</li>
+                      <li>By using condoms as well as natural family planning, you'll help to protect yourself against sexually transmitted infections (STIs).</li>
+                  </ul>
+                </section>
+
+
+                <section>
+                    <h2>How natural family planning works</h2>
+                    <p>Natural family planning involves identifying the signs and symptoms of fertility during your menstrual cycle so you can plan or avoid pregnancy.</p>
+                    <p>If you're interested in learning natural family planning, make sure you're taught by a qualified fertility awareness teacher. Find a <a href="http://www.fertilityuk.org/find-a-clinic/">fertility awareness clinic in your local area</a>.</p>
+                    <p>There are 3 different fertility signals you can monitor and record for natural family planning. These are:</p>
+                    <ul>
+                      <li>the length of your menstrual cycle</li>
+                      <li>daily readings of your body temperature</li>
+                      <li>changes to your cervical secretions (cervical mucus)</li>
+                    </ul>
+                    <p>It's best to record these measures together to give you a more accurate picture of when you're likely to be most fertile.</p>
+                    <p>You can use fertility charts to record and track your measurements over the course of each menstrual cycle. You can download <a href="http://www.fertilityet.org.uk/charts.html">fertility charts from the Fertility Education and Training site</a>, with information on how to use them.</p>
+                    <p>You can also download smartphone apps to track this information.</p>
+                    <h3>Your menstrual cycle and ovulation</h3>
+                    <p>Your menstrual cycle lasts from the first day of your period until the day before your next period starts. This is 28 days on average but longer or shorter cycles, from 21 to 40 days, are normal.</p>
+                    <p>During your cycle, an egg is released from one of your ovaries (ovulation) and travels down the fallopian tube. It is usually released 10-16 days before your next period. Occasionally, a second egg is released, within 24 hours of the first egg.</p>
+                    <p>The egg only lives for a maximum of 24 hours after ovulation, and a sperm must meet the egg within that period for pregnancy to happen.</p>
+                    <p>You can get pregnant up to 2 days after you ovulate. But if you've had sex in the 7 days before ovulation, it's possible to get pregnant because sperm can live inside a woman's body for up to 7 days and fertilise the egg when it's released.</p>
+                    <p>By tracking your cycle, you can calculate when you're most likely to be fertile (able to conceive). But you need to allow for uncertainty over exactly when you ovulate.</p>
+                    <p>The length of a menstrual cycle can vary over time, so to make sure your calculations are as precise as possible, measure your menstrual cycle over the course of 12 months.</p>
+                    <h3>The temperature method</h3>
+                    <p>The temperature method is used because there's a small rise in body temperature after ovulation.</p>
+                    <p>You'll need to use either a digital thermometer or a thermometer specifically designed for natural family planning. Ear or forehead thermometers are not accurate enough for this.</p>
+                    <p>The temperature method involves taking your temperature every morning before you get out of bed. This should be done before eating, drinking and smoking, and ideally at the same time every morning.</p>
+                    <p>Look out for 3 days in a row when your temperature is higher than all of the previous 6 days. The increase in temperature is very small, usually around 0.2C (0.4F). It's likely that you're no longer fertile at this time.</p>
+                    <h3>Cervical secretion monitoring method</h3>
+                    <p>There's a change in the amount and texture of your cervical secretions (cervical mucus) during different times in your menstrual cycle.</p>
+                    <p>You can check this by gently placing your middle finger into your vagina and pushing it up to around your middle knuckle. For the first few days after your period, you'll probably find your vagina is dry and you cannot feel any mucus.</p>
+                    <p>As your hormone levels rise to prepare your body for ovulation, you'll probably find that you start to produce mucus that is moist, sticky, white and creamy. This is the start of the fertile period of your menstrual cycle.</p>
+                    <p>Immediately before ovulation the mucus will get wetter, clearer and slippery - a bit like raw egg white. This is when you're at your most fertile.</p>
+                    <p>The mucus should then soon return to being thicker and sticky, and after 3 days you should no longer be fertile.</p>
+                </section>
+                
+
+                <section>
+                    <h2>How effective is natural family planning?</h2>
+                    <p>If natural family planning instructions are carefully followed, this method can be up to 99% effective. This means that 1 to 9 women in 100 who use natural family planning correctly will get pregnant.</p>
+                    <p>But if natural family planning methods are not quite followed correctly, more women will get pregnant. It takes commitment and practice to use natural family planning effectively.</p>
+                </section>
+                
+                
+                <section>
+                    <h2>Who can use natural family planning</h2>
+                    <p>Most women can use natural family planning. However, certain situations can affect fertility signs and you might want to consider a different method if:</p>
+                    <ul>
+                      <li>there could be a health risk to the baby if you got pregnant</li>
+                      <li>you're having irregular periods</li>
+                      <li>you have a short or long-term condition affecting your fertility signs, such as a sexually transmitted infection (STI) or pelvic inflammatory disease</li>
+                      <li>you're taking a medication that disrupts production of cervical mucus (ask your GP or a pharmacist if you're not sure)</li>
+                      <li>you've recently stopped taking hormonal contraception</li>
+                      <li>you've recently had a <a href="/conditions/miscarriage/">miscarriage</a> or <a href="/conditions/abortion/">abortion</a></li>
+                      <li>you've recently given birth and are breastfeeding</li>
+                      <li>you regularly travel through different time zones</li>
+                      <li>you have a vaginal infection such as <a href="/conditions/vaginal-thrush/">thrush</a> or an <a href="/conditions/sexually-transmitted-infections-stis/">STI</a>, or you're at increased risk of getting an STI</li>
+                      <li>you're not able to take your temperature in the recommended way</li>
+                      <li>you're a heavy drinker</li></ul>
+                </section>
+
+                
+                <section>
+                    <p>Advantages:</p>
+                    <ul>
+                      <li>It does not cause any side effects.</li>
+                      <li>Natural family planning is acceptable to all faiths and cultures.</li>
+                      <li>Most women can use natural family planning, as long as they're properly trained by a fertility awareness teacher.</li>
+                      <li>Once you've learned the techniques, there should be no further need for input from health professionals.</li>
+                      <li>Natural family planning can be used either to avoid pregnancy or to become pregnant.</li>
+                      <li>It does not involve chemicals or physical products.</li>
+                      <li>It can help you recognise normal and abnormal vaginal secretions, so you can be aware of possible infection.</li>
+                      <li>It involves your partner in the process, which can help increase feelings of closeness and trust.</li>
+                    </ul>
+                    <p>Disadvantages:</p>
+                      <ul>
+                        <li>Natural family planning does not protect against STIs such as <a href="/conditions/chlamydia/">chlamydia</a> or <a href="/conditions/hiv-and-aids/">HIV</a>.</li>
+                        <li>You'll need to avoid sex, or use contraception such as condoms, during the time you might get pregnant, which some couples can find difficult.</li>
+                        <li>If you decide to abstain, there can sometimes be up to 16 days during which you cannot have sex, depending on your cycle.</li>
+                        <li>It can be much less effective than other methods of contraception if the methods are not followed accurately.</li>
+                        <li>It will not work without continued commitment and practice.</li>
+                        <li>It can take several menstrual cycles before you become confident in identifying your fertile time. During this time, you'll have to use barrier contraception, such as condoms.</li>
+                        <li>You'll need to keep a daily record of your fertility signs.</li>
+                        <li>It's not suitable for every woman.</li>
+                        <li>Stress, illness, travel, lifestyle and hormonal treatments can disrupt your fertility signs.</li>
+                        <li>If you use the emergency contraceptive pill, you'll need to wait for 2 complete cycles before relying on natural family planning again.</li>
+                      </ul>
+                </section>
+                
+    
+                <section>
+                  <h2>Lactational amenorrhoea method (LAM)</h2>
+                  <p>You're unlikely to have any periods if you breastfeed exclusively (give your baby breast milk only) and your baby is under 6 months old. Because of this, some women use breastfeeding as a form of natural contraception. This is known as the lactational amenorrhoea method (LAM).</p>
+                  <p>When used correctly and consistently, less than 2 in 100 women who use LAM will get pregnant in the first 6 months. However, take care to use the method correctly. Do not feed your baby other foods because this may reduce your lactation.</p>
+                  <p>LAM becomes unreliable when:</p>
+                  <ul>
+                    <li>gaps between feeds are longer than 4 hours during the day or longer than 6 hours at night</li>
+                    <li>other foods or liquids are substituted for breast milk</li>
+                    <li>your baby reaches 6 months old</li>
+                    <li>you have a period</li>
+                  </ul>
+                  <p>After having a baby, it is possible to get pregnant before your periods start again. This is because you ovulate around 2 weeks before your period.</p>
+                  <p>Read more about <a href="http://www.fertilityuk.org/breastfeeding/">LAM from Fertility UK</a>.</p>
+                </section>
+                
+          
+                  <div>
+                    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                        Page last reviewed: 13 April 2021
+                        <br>
+                        Next review due: 13 April 2024
+                    </p>
+                  </div>
+                
+                
+              </div>
+
+            </div>
+        </article>
+
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Home</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Health A to Z</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Live Well</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Mental health</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Care and support</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Pregnancy</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS services</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Coronavirus (COVID-19)</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS App</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Find my NHS number</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Your health records</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About the NHS</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Healthcare abroad</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Contact us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Other NHS websites</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Profile editor login</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list nhsuk-footer__meta">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Our policies</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
