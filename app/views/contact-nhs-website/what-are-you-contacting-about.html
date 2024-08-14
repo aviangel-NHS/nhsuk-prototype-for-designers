@@ -1,0 +1,68 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Give feedback about the NHS website - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+<!-- Main content -->
+{% block content %}
+<div class="nhsuk-width-container">
+
+  <!-- Go back link -->
+  <div class="nhsuk-back-link">
+    <a class="nhsuk-back-link__link" href="what-are-your-contact-details">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+      </svg>
+      Go back
+    </a>
+  </div>
+
+<!-- Main content -->
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="main-content">
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <form method="post" autocomplete="off" action="what-are-you-contacting-about">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+              <h1 class="nhsuk-fieldset__heading">
+                Tell us why you are contacting the NHS website team
+              </h1>
+            </legend>
+
+            <div class="nhsuk-form-group nhsuk-form-group nhsuk-u-margin-bottom-8" id="question_message">
+              <label class="nhsuk-label" for="Message">Can you provide more detail?</label>
+
+                <div class="nhsuk-hint" id="message_hint">
+                  Do not include personal or medical details in your message, for example, do not include your NHS number, date of birth, medical diagnosis, or medical history.
+                  <br>
+                  Do not use offensive, abusive or inappropriate language.
+                </div>
+
+                <div data-maxlength="500" data-module="character-count">
+                  <textarea rows="10" value="" data-val="true" data-val-required="Tell us why you are contacting the NHS website team" id="Message" name="Message" aria-describedby="message_hint Message-info" class="nhsuk-textarea js-character-count"></textarea>
+                  <span id="Message-info" class="nhsuk-hint nhsuk-character-count__message" aria-live="polite">You have 500 characters remaining</span>
+                </div>
+            </div>
+          </fieldset>
+
+          <button id="submit-button" type="submit" class="nhsuk-button" aria-live="polite">Continue</button>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Itv0HaQf-ZIh4z2qDsFO3s8R6Xu06sc_9o0ARunhziZ4MR-0MGxkBPRmWqf1sm7clvVcLIlnW7lUwC0d9efPuxg1-dqX-4kZj1MpTn4maKITHrfOzwUSgrJDyw2003Qo3KbCCKryD9wu5Ya5ZTwqFE"></form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

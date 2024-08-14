@@ -1,0 +1,116 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Access your NHS account
+{% endblock %}
+
+<!-- Breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../../homepage">Home</a>
+      </li>
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../../../nhs-app">NHS App</a>
+      </li>
+    </ol>
+
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="../nhs-app">
+        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        NHS App
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- Main content -->
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1>Access your NHS account</h1>
+      </div>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <p>Log in to:</p>
+          <ul>
+            <li>book your COVID-19 vaccine</li>
+            <li>view your health record and test results</li>
+            <li>order repeat prescriptions</li>
+            <li>book and manage appointments and referrals</li>
+            <li >access other NHS services</li>
+          </ul>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>We may need to send you a security code on your mobile phone, so you can log in.</p>
+          </div>
+
+          <a href="" role="button" draggable="false" class="nhsuk-button ">
+            Continue with NHS login
+          </a>
+
+          <h2><b>Who can have an NHS account</b></h2>
+          <p>You can have an account if you are:</p>
+          <ul>
+            <li>registered with a GP surgery in England</li>
+            <li>aged 13 or over</li>
+          </ul>
+          <p><a href="">Find out more about who can have an NHS account</a></p>
+
+          <h2 >Get the NHS App</h2>
+          <p>You can also log in to your NHS account using the NHS App on your smartphone or tablet.</p>
+
+          <figure class="app-apps-store-link">
+          <div class="nhsuk-c-image__container">
+          <a href="">
+          <img class="nhsuk-c-image__img" alt="Download on the App store" src="/static/nhsuk/img/apple-store-badge.2928664fe1fc.svg">
+          </a>
+          </div>
+          </figure>
+          <figure class="app-apps-store-link">
+          <div class="nhsuk-c-image__container">
+          <a href="">
+          <img class="nhsuk-c-image__img" alt="Download on Google Play" src="/static/nhsuk/img/google-play-badge.c4182f13038b.png">
+          </a>
+          </div>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Health advice and information</h2>
+          <p>Find out more about health conditions, symptoms, treatments and how to get help, without logging in, on the <a href="/">NHS website</a>.</p>
+        </section>
+
+        </div>
+
+      </div>
+    </article>
+
+    <div>
+      <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+        Page last reviewed: 7 December 2022
+        <br>
+        Next review due: 5 July 2024
+      </p>
+    </div>
+
+  </main>
+</div>
+{% endblock %}

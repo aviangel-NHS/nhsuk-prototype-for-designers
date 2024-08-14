@@ -1,0 +1,481 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Pharmacies near W1B2AE
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../../homepage">Home</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../../../nhs-services">NHS services</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-2" class="nhsuk-breadcrumb__link" href="../../../nhs-services/pharmacy">Pharmacy</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-3" class="nhsuk-breadcrumb__link" href="../../find-a-pharmacy">Find a pharmacy</a>
+        </li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back">
+        <a class="nhsuk-breadcrumb__backlink" href="../../../nhs-services/pharmacy">
+          <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+          GPs
+        </a>
+      </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Main content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-u-reading-width">
+      <h1>Pharmacies near W1B2AE</h1>
+    </div>
+
+    <div class="results">
+      <p class="nhsuk-u-font-size-22">Closest listed first</p>
+
+        <div>
+
+        <div id="panel-wrapper">
+          <div id="panel" style="background-color: white;">
+            <details class="nhsuk-details nhsuk-expander" id="details">
+              <summary class="nhsuk-details__summary" id="summary">
+                <span class="nhsuk-details__summary-text">
+                  Filter results
+                </span>
+              </summary>
+
+              <div id="filter-panel" class="nhsuk-details__text nhsuk-form-group__fieldset">
+                <form name="FindGpFilterForm" id="find-gp-filter-form" method="get" aria-label="filter services form" action="/service-search/find-a-pharmacy/results/w1b2ae">
+                  <div id="filters" class="nhsuk-form-group">
+                    <input type="hidden" value="W1B 2AE" id="Location" name="Location">
+                    <input type="hidden" id="GP_lat" name="Latitude">
+                    <input type="hidden" id="GP_lon" name="Longitude">
+                                      
+                    <fieldset class="nhsuk-fieldset">
+                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                        <h2 class="nhsuk-fieldset__heading" id="filter_category_heading_0">Show only</h2>
+                    </legend>
+                      <div class="nhsuk-checkboxes">
+                        <div class="nhsuk-checkboxes__item form-group">
+                                                  <input type="checkbox" id="filter_option_1" name="gpNewPatients" value="true" class="nhsuk-checkboxes__input hidden-when-collapsed" tabindex="-1">
+                                                  <label for="filter_option_1" class="nhsuk-label nhsuk-checkboxes__label nhsuk-checkboxes__label-mobile-filter">Services open now</label>
+                        </div>
+
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <div id="filter-actions" class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5 nhsuk-u-border-top nhsuk-u-margin-left-0 nhsuk-u-sticky-bottom">
+                    <div id="filter-link-actions" class="nhsuk-u-justify-spaced nhsuk-u-font-smaller" style="display: flex;">
+                      <a href="#" class="nhsapp-open-in-webview nhsuk-link--no-visited-state hidden-when-collapsed" id="clear-all-filters" tabindex="-1">Clear all filters</a>
+                    </div>
+                    <div id="filter-apply" class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                      <button class="nhsuk-button nhsuk-u-margin-bottom-4 hidden-when-collapsed" data-module="nhsuk-button" type="submit" id="apply-filters-button" tabindex="-1">Apply filters</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div id="num-selected" class="nhsuk-u-margin-top-4">
+          <p id="num-filters">0 filters applied</p>
+          </div>
+        </div>
+
+        <div id="plan_your_journey" class="nhsuk-warning-callout">
+          <h2 class="nhsuk-warning-callout__label">
+            <span role="note">
+              <span class="nhsuk-u-visually-hidden">Important: </span>
+                Plan your journey
+            </span>
+          </h2>
+          <p>
+            The closest services are listed first. Distances to services are measured in a straight line.
+            Plan your journey to account for travel time.
+          </p>
+        </div>
+
+        <ol id="catchment_gps_list" class="nhsuk-list results service-results">
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Boots</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_0" class="nhsuk-u-visually-hidden" aria-hidden="true">E87648</p>
+                    <p id="item_org_type_id_0" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_0" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.1 miles away</p>
+
+                    <h2 id="orgname_0" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href=""><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Boots</a></h2>
+                    <div class="nhsuk-inset-text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4" style="border-left-color: #007f3b;">
+                      <span class="nhsuk-u-visually-hidden" id="open_time_description_text_0">This pharmacy is currently: </span>
+                      <p id="opening_hour_status_mesg_0" class="callout--info__mesg nhsuk-u-font-weight-bold">Open</p>
+                    </div>
+
+                    <p id="opening_times_label_0" class="nhsuk-u-margin-bottom-0">Opening times:</p>
+                    <ul class="nhsuk-list" id="opening_times_list_6">
+                      <li class="nhsuk-u-margin-bottom-0">9am to 9pm</li>
+                    </ul>
+
+                    <p id="address_0" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                      302 REGENT STREET, LONDON, W1B 3AS
+                    </p>
+
+                    <p id="phone_0" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02074931647
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_0" href="" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Boots</span>
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Boots</span>
+              
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_1" class="nhsuk-u-visually-hidden" aria-hidden="true">E87714</p>
+                    <p id="item_org_type_id_1" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_1" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.2 miles away</p>
+
+                    <h2 id="orgname_1" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href=""><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Boots</a></h2>
+                    <div class="nhsuk-inset-text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4" style="border-left-color: #007f3b;">
+                      <span class="nhsuk-u-visually-hidden" id="open_time_description_text_0">This pharmacy is currently: </span>
+                      <p id="opening_hour_status_mesg_0" class="callout--info__mesg nhsuk-u-font-weight-bold">Open</p>
+                    </div>
+
+                    <p id="opening_times_label_1" class="nhsuk-u-margin-bottom-0">Opening times:</p>
+                    <ul class="nhsuk-list" id="opening_times_list_6">
+                      <li class="nhsuk-u-margin-bottom-0">9am to 9pm</li>
+                    </ul>
+
+                    <p id="address_1" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                      193 OXFORD STREET, LONDON, W1D 2JY
+                    </p>
+
+                    <p id="phone_1" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02072875025
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_1" href="" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Boots</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Wigmore Pharmacy</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_2" class="nhsuk-u-visually-hidden" aria-hidden="true">E87069</p>
+                    <p id="item_org_type_id_2" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_2" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.2 miles away</p>
+
+                    <h2 id="orgname_2" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href=""><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Wigmore Pharmacy</a></h2>
+                    <div class="nhsuk-inset-text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4" style="border-left-color: #007f3b;">
+                      <span class="nhsuk-u-visually-hidden" id="open_time_description_text_0">This pharmacy is currently: </span>
+                      <p id="opening_hour_status_mesg_0" class="callout--info__mesg nhsuk-u-font-weight-bold">Open</p>
+                    </div>
+
+                    <p id="opening_times_label_2" class="nhsuk-u-margin-bottom-0">Opening times:</p>
+                    <ul class="nhsuk-list" id="opening_times_list_6">
+                      <li class="nhsuk-u-margin-bottom-0">9am to 6pm</li>
+                    </ul>
+
+                    <p id="address_2" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                      23 WIGMORE STREET, LONDON, W1U 1PL
+                    </p>
+
+                    <p id="phone_2" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                      02074910111
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_2" href="" rel="noreferrer" class="maplink">
+                        Map and directions
+                          <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Wigmore Pharmacy</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Healthxchange Pharmacy Uk Ltd</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_4" class="nhsuk-u-visually-hidden" aria-hidden="true">E87066</p>
+                    <p id="item_org_type_id_3" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_3" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.2 miles away</p>
+            
+                    <h2 id="orgname_3" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href=""><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Healthxchange Pharmacy Uk Ltd</a></h2>
+                    <div class="nhsuk-inset-text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4" style="border-left-color: #007f3b;">
+                      <span class="nhsuk-u-visually-hidden" id="open_time_description_text_0">This pharmacy is currently: </span>
+                      <p id="opening_hour_status_mesg_0" class="callout--info__mesg nhsuk-u-font-weight-bold">Open</p>
+                    </div>
+
+                    <p id="opening_times_label_3" class="nhsuk-u-margin-bottom-0">Opening times:</p>
+                    <ul class="nhsuk-list" id="opening_times_list_6">
+                      <li class="nhsuk-u-margin-bottom-0">9am to 10pm</li>
+                    </ul>
+
+                    <p id="address_3" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        79 Great Portland Street, London, W1W 7LS
+                    </p>
+
+                    <p id="phone_3" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        020 75802441
+                    </p>
+                                
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_3" href="" rel="noreferrer" class="maplink">
+                        Map and directions
+                          <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+          
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Healthxchange Pharmacy Uk Ltd</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Boots</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+
+                  <div>
+
+                    <p id="item_id_4" class="nhsuk-u-visually-hidden" aria-hidden="true">E87002001</p>
+                    <p id="item_org_type_id_4" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_4" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.3 miles away</p>
+              
+                    <h2 id="orgname_4" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href=""><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Boots</a></h2>
+                    <div class="nhsuk-inset-text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4" style="border-left-color: #007f3b;">
+                      <span class="nhsuk-u-visually-hidden" id="open_time_description_text_0">This pharmacy is currently: </span>
+                      <p id="opening_hour_status_mesg_0" class="callout--info__mesg nhsuk-u-font-weight-bold">Open</p>
+                    </div>
+
+                    <p id="opening_times_label_4" class="nhsuk-u-margin-bottom-0">Opening times:</p>
+                    <ul class="nhsuk-list" id="opening_times_list_6">
+                      <li class="nhsuk-u-margin-bottom-0">9am to 8pm</li>
+                    </ul>
+
+                    <p id="address_4" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        355-361 OXFORD STREE, 13-16 WOODSTOCK STREET, LONDON, W1C 2JL
+                    </p>
+
+                    <p id="phone_4" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02070366060
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_4" href="" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+
+                  </div>
+
+                </div>
+              </div>
+          
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Boots</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Shiv Pharmacy</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_5" class="nhsuk-u-visually-hidden" aria-hidden="true">E87037</p>
+                    <p id="item_org_type_id_5" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_5" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.3 miles away</p>
+                
+                    <h2 id="orgname_5" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href=""><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Shiv Pharmacy</a></h2>
+                    <div class="nhsuk-inset-text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4" style="border-left-color: #007f3b;">
+                      <span class="nhsuk-u-visually-hidden" id="open_time_description_text_0">This pharmacy is currently: </span>
+                      <p id="opening_hour_status_mesg_0" class="callout--info__mesg nhsuk-u-font-weight-bold">Open</p>
+                    </div>
+
+                    <p id="opening_times_label_5" class="nhsuk-u-margin-bottom-0">Opening times:</p>
+                    <ul class="nhsuk-list" id="opening_times_list_6">
+                      <li class="nhsuk-u-margin-bottom-0">9am to 6pm</li>
+                    </ul>
+
+                    <p id="address_5" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        70 Great Titchfield St, London, W1W 7QN
+                    </p>
+
+                    <p id="phone_5" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                      02075802393
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_6" href="" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+          
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Shiv Pharmacy</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; JOHN BELL & CROYDON</span>
+            
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_6" class="nhsuk-u-visually-hidden" aria-hidden="true">E87737</p>
+                    <p id="item_org_type_id_6" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_6" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.3 miles away</p>
+
+                    <h2 id="orgname_6" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href=""><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>JOHN BELL & CROYDON</a></h2>
+                    <div class="nhsuk-inset-text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4" style="border-left-color: #007f3b;">
+                      <span class="nhsuk-u-visually-hidden" id="open_time_description_text_0">This pharmacy is currently: </span>
+                      <p id="opening_hour_status_mesg_0" class="callout--info__mesg nhsuk-u-font-weight-bold">Open</p>
+                    </div>
+
+                    <p id="opening_times_label_6" class="nhsuk-u-margin-bottom-0">Opening times:</p>
+                    <ul class="nhsuk-list" id="opening_times_list_6">
+                      <li class="nhsuk-u-margin-bottom-0">9am to 8pm</li>
+                    </ul>
+
+                    <p id="address_6" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        50-54 WIGMORE STREET, LONDON, W1U 2AU
+                    </p>
+
+                    <p id="phone_6" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02079355555
+                    </p>
+                                
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_6" href="" rel="noreferrer" class="maplink">
+                        Map and directions
+                          <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                        </a>
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; JOHN BELL & CROYDON</span>
+
+            </li>
+
+
+
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Shiv Pharmacy</span>
+            </li>
+
+        </ol>
+
+    </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

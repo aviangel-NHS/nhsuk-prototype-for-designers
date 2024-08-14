@@ -1,157 +1,151 @@
-{% extends 'template-1.html' %}
+{% extends 'template-nhs.html' %}
 
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
 {% block pageTitle %}
   Chestfeeding your baby if you’re trans or non-binary
 {% endblock %}
 
-<!-- Header goes inside the header block -->
-<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
-
-
-<!-- Breadcumbs -->
-<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+<!-- Breadcrumbs -->
 {% block beforeContent %}
-{{
- breadcrumb({
-  items: [
-    {
-      href: "../../../nhsuk-homepage",
-      text: "Home"
-    },
-    {
-      href: "../../pregnancy",
-      text: "Pregnancy"
-    }
-  ],
-      href: "../having-a-baby-if-you-are-lgbt-plus",
-      text: "Having a baby if you are LGBT+"
-})
-}}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../homepage">Home</a>
+      </li>
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../../pregnancy">Pregnancy</a>
+      </li>
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-2" class="nhsuk-breadcrumb__link" href="../having-a-baby-if-you-are-lgbt-plus"> Having a baby if you're LGBT+</a>
+      </li>
+    </ol>
+
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="../having-a-baby-if-you-are-lgbt-plus">
+        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        Having a baby if you're LGBT+ 
+      </a>
+    </p>
+  </div>
+</nav>
 {% endblock %}
+
 
 <!-- Main content -->
 {% block content %}
-<div class="nhsuk-width-container">
-    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
 
-        <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-two-thirds">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
 
-                <h1>Chestfeeding your baby if you’re trans or non-binary</h1>
+    <!-- Heading and lede text -->
+    <div class="nhsuk-u-reading-width">
+      <h1>Chestfeeding your baby if you’re trans or non-binary</h1>
+    </div>
 
+    <!-- Main article -->
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <section>
+            <p>Chestfeeding is feeding your baby with your milk from your chest.</p>
+            <p>If you’re able to chestfeed, it’s your decision whether you do and you can change your mind at any time. You will be fully supported in any decisions you make.</p>
+          </section>
+  
+          <section>
+            <h2>Chestfeeding if you’ve had top surgery</h2>
+            <p>If you’ve had top surgery to remove soft tissue, you may still be able to chestfeed or express your milk. </p>
+            <p>It is not possible to know how much milk you will produce and if it will be enough for your baby. You may need to offer your baby extra feeds, such as with expressed chest milk or formula.</p>
+            <p>Your baby may find it difficult to latch on to your nipple if there is less soft tissue available. In this case, ask your midwife for advice.</p>
+          </section>
+  
+          <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+            <div class="nhsuk-card--care__heading-container">
+              <h3 class="nhsuk-card--care__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Speak to your midwife or GP if:</span></h3>
+              <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
             </div>
+            
+            <div class="nhsuk-card__content">
+              <ul>
+                <li>you want to take testosterone while chestfeeding</li>
+              </ul>
+              <p>Testosterone can decrease your milk supply. Your midwife or GP can advise you.</p>
+            </div>
+          </div>
+  
+          <section>
+            <h2>Binding while chestfeeding</h2>
+            <p>If you bind (make your chest look flatter) and are chestfeeding, there may be a higher chance of you getting an infection called mastitis.</p>
+            <p>Mastitis causes your chest to become swollen, hot and painful. You may want to try wearing a larger size binder than before.</p>
+            <p>Speak to your midwife or GP if you think you may have mastitis.</p>
+          </section>
+  
+          <section>
+            <h2>Skin-to-skin contact</h2>
+            <p>Skin-to-skin contact with your newborn is a great way to bond with your baby.</p>
+            <p>Skin-to-skin means holding your baby naked or dressed only in a nappy against your skin.</p>
+            <p>It’s good to do at any time and will help to comfort you and your baby over the first few weeks as you get to know each other. </p>
+          </section>
+  
+          <section>
+            <h2>Further support</h2>
+            <ul>
+              <li><a href="">Brighton and Sussex University Hospitals Gender Inclusion</a> has a useful leaflet and resources which might be helpful for you to take to appointments</li>
+              <li><a href="">La Leche League GB: Support for Transgender and Non-binary Parents</a></li>
+            </ul>
+          </section>
+
         </div>
+      </div>
+    </article>
 
-        <article>
-            <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid-column-two-thirds">
+    <aside class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+          <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+            <h2 class="nhsuk-u-font-size-24 nhsuk-u-margin-bottom-4">
+              More in
+                <a href="../having-a-baby-if-you-are-lgbt-plus">Having a baby if you're LGBT+</a>
+            </h2>
+            
+            <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+              <ul class="beta-nhsuk-navigation-sideways__list">
 
+                <li class="beta-nhsuk-navigation-sideways__item">
+                  <a class="app-related-nav__link" href="ways-to-become-a-parent-if-you-are-lgbt-plus">
+                    Ways to become a parent if you're LGBT+
+                  </a>
+                </li>
 
-                    <section>
-                        <p>Chestfeeding is feeding your baby with your milk from your chest.</p>
-                        <p>If you’re able to chestfeed, it’s your decision whether you do and you can change your mind at any time. You will be fully supported in any decisions you make.</p>
-                    </section>
+                <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                  <a class="app-related-nav__link" href="testosterone-and-pregnancy">
+                    Testosterone and pregnancy
+                  </a>
+                </li>
 
-                    <section>
-                        <h2>Chestfeeding if you’ve had top surgery</h2>
-                        <p>If you’ve had top surgery to remove soft tissue, you may still be able to chestfeed or express your milk. </p>
-                        <p>It is not possible to know how much milk you will produce and if it will be enough for your baby. You may need to offer your baby extra feeds, such as with expressed chest milk or formula.</p>
-                        <p>Your baby may find it difficult to latch on to your nipple if there is less soft tissue available. In this case, ask your midwife for advice.</p>
-                    </section>
+                <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                  Chestfeeding if you're trans or non-binary
+                </li>
 
-                    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
-                        <div class="nhsuk-card--care__heading-container">
-                            <h3 class="nhsuk-card--care__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Speak to your midwife or GP if:</span></h3>
-                            <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
-                        </div>
-                        <div class="nhsuk-card__content">
-
-                            <ul>
-                                <li>you want to take testosterone while chestfeeding</li>
-                            </ul>
-                            <p>Testosterone can decrease your milk supply. Your midwife or GP can advise you.</p>
-                        </div>
-                    </div>
-
-
-                    <section>
-                        <h2>Binding while chestfeeding</h2>
-                        <p>If you bind (make your chest look flatter) and are chestfeeding, there may be a higher chance of you getting an infection called mastitis.</p>
-                        <p>Mastitis causes your chest to become swollen, hot and painful. You may want to try wearing a larger size binder than before.</p>
-                        <p>Speak to your midwife or GP if you think you may have mastitis.</p>
-                    </section>
-
-                    <section>
-                        <h2>Skin-to-skin contact</h2>
-                        <p>Skin-to-skin contact with your newborn is a great way to bond with your baby.</p>
-                        <p>Skin-to-skin means holding your baby naked or dressed only in a nappy against your skin.</p>
-                        <p>It’s good to do at any time and will help to comfort you and your baby over the first few weeks as you get to know each other. </p>
-                    </section>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </aside>
 
 
-                    <section>
-                        <h2>Further support</h2>
-                        <ul>
-                            <li><a href="https://www.bsuh.nhs.uk/maternity/our-services/specialist-support/gender-inclusion/">Brighton and Sussex University Hospitals Gender Inclusion</a> has a useful leaflet and resources which might be helpful for you to take to appointments</li>
-                            <li><a href="https://www.laleche.org.uk/support-transgender-non-binary-parents/">La Leche League GB: Support for Transgender and Non-binary Parents</a></li>
-                        </ul>
-                    </section>
-
-
-                </div>
-            </div>
-        </article>
-
-        <aside class="nhsuk-grid-column">
-            <div id="sibling-nav" class="app-related-nav beta-hub-sibling-nav nhsuk-u-padding-top-5">
-                <h2 class="app-related-nav__heading nhsuk-u-padding-bottom-3 nhsuk-heading-m">
-                    More in
-                    <a href="../having-a-baby-if-you-are-lgbt-plus">Having a baby if you're LGBT+</a>
-                </h2>
-                <nav role="navigation" class="app-related-nav__nav-section">
-                    <ul class="app-related-nav__list beta-hub-sibling-nav__list">
-
-
-                      <li class="beta-hub-sibling-nav__item">
-                          <a class="app-related-nav__link" href="ways-to-become-a-parent-if-you-are-lgbt-plus">
-                            LGBT+ ways to become a parent
-                          </a>
-                      </li>
-
-                      <li class="beta-hub-sibling-nav__item  beta-hub-sibling-nav--current">
-                        Chestfeeding if you're trans or non-binary
-                      </li>
-
-                      <li class="beta-hub-sibling-nav__item">
-                        <a class="app-related-nav__link" href="testosterone-and-pregnancy">
-                          Testosterone and pregnancy
-                        </a>
-                    </li>
-
-
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-
-        <div class="nhsuk-review-date">
-            <p class="nhsuk-body-s">
-                Page last reviewed: 9 December 2021
-                <br>
-                Next review due: 9 December 2024
-            </p>
-        </div>
-
-
-
-
-    </main>
-</div>
+    <div>
+      <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+        Page last reviewed: 15 June 2023
+        <br>
+        Next review due: 15 June 2026
+      </p>
+    </div>
 
   </div>
+</div>
+
 {% endblock %}
-
-<!-- Footer goes inside the footer block -->
-<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
-
-

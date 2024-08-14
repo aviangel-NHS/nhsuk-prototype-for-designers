@@ -5,7 +5,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Find a GP 
+  Find a pharmacy 
 {% endblock %}
 
 {% block beforeContent %}
@@ -20,13 +20,16 @@
           <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../nhs-services">NHS services</a>
         </li>
         <li class="nhsuk-breadcrumb__item">
-          <a id="breadcrumb-link-2" class="nhsuk-breadcrumb__link" href="../nhs-services/gps">GPs</a>
+          <a id="breadcrumb-link-2" class="nhsuk-breadcrumb__link" href="../nhs-services/pharmacies">Pharmacies </a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-3" class="nhsuk-breadcrumb__link" href="../service-search/pharmacy">Find pharmacy services</a>
         </li>
       </ol>
       <p class="nhsuk-breadcrumb__back">
-        <a class="nhsuk-breadcrumb__backlink" href="../nhs-services/gps">
+        <a class="nhsuk-breadcrumb__backlink" href="../nhs-services/pharmacies">
           <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
-          GPs
+          Pharmacies 
         </a>
       </p>
   </div>
@@ -42,24 +45,23 @@
 
     <!-- Heading and lede text -->
     <div class="nhsuk-u-reading-width">
-      <h1>Find a GP</h1>
+      <h1>Find a pharmacy</h1>
     </div>
 
-    <form name="ServiceSearchForm" id="service-search-form" method="post" action="find-a-gp/results/W1B2AE">
+    <form name="ServiceSearchForm" id="service-search-form" method="post" action="find-a-pharmacy/results/W1B2AE">
       <input type="hidden" value="GPB" data-val="true" data-val-required="The ServiceId field is required." id="ServiceId" name="ServiceId">
       <input type="hidden" id="UsersLatitude" name="UsersLatitude" value="">
       <input type="hidden" id="UsersLongitude" name="UsersLongitude" value="">
       <div class="nhsuk-form-group">
-          <label class="nhsuk-label" for="Location">Enter a postcode in England</label>
+          <label class="nhsuk-label" for="Location">Enter a town, city or postcode in England</label>
           <input class="nhsuk-input nhsuk-input--width-10" type="text" maxlength="8" value="" id="Location" name="Location">
       </div>
       <button class="nhsuk-button nhsuk-u-margin-bottom-4" data-module="nhsuk-button" type="submit">Search</button><br>
       <button id="use-your-location-button" class="nhsuk-button nhsuk-button--secondary geo-locate--button nhsuk-u-margin-bottom-7" data-module="nhsuk-button">Use your location</button>
 
-      <h2 id="find_out_more_subheading">Find out more about registering with a GP surgery</h2>
       <ul id="find_out_more_links" class="nhsuk-list additional-links">
-        <li><a href="">How to register with a GP surgery</a></li>
-        <li><a href="">Registering with a GP surgery outside the area you live</a></li>
+        <li><a href="">See all internet pharmacies</a></li>
+        <li><a href="">See all dispensing appliance contractors.</a></li>
       </ul>
       <input name="__RequestVerificationToken" type="hidden" value="CfDJ8AIxQvLensBCnqDbxv01V5Qdh6hnY3pAGxTj-OGcrS2rTnhlVCAV0mfIOikk9K_JQtEVezp7MrBy-7idvk549SIkEH0CE4Lnu2qhHddWwhdA5_g5d56-9qiOLKi8iiWZC_bU2osrEeS91RwJ2URbo1M">
     </form>

@@ -5,7 +5,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Pregnancy - NHS
+  Social care and support guide - NHS
 {% endblock %}
 
 {% block headCSS %}
@@ -15,16 +15,23 @@
 
 
 
-{% block beforeContent %}
 <!-- Breadcrumbs -->
-<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a href="homepage" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../homepage">Home</a>
+      </li>
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../conditions">Health A to Z</a>
+      </li>
     </ol>
+
     <p class="nhsuk-breadcrumb__back">
-      <a href="homepage" class="nhsuk-breadcrumb__backlink">
-        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      <a class="nhsuk-breadcrumb__backlink" href="../conditions">
+        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        Health A to Z
       </a>
     </p>
   </div>
@@ -32,7 +39,7 @@
 {% endblock %}
 
 
-<!-- Pregnancy content -->
+<!-- Live well content -->
 {% block content %}
 
 <div class="nhsuk-grid-row">
@@ -40,55 +47,25 @@
 
     <!-- Heading and lede text -->
     <div class="nhsuk-u-reading-width">
-      <h1>Pregnancy</h1>
+      <h1>Social care and support guide</h1>
       <p class="nhsuk-lede-text">
-        This guide includes all you need to know about trying for a baby, pregnancy, labour and birth.
+        If you or someone you know needs help with day-to-day living because of illness or disability, this website explains your options and where you can get support.
       </p>
     </div>
 
     <article>
-      <h2 class="nhsuk-u-visually-hidden">Top tasks in Pregnancy</h2>
-
-      <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
-
-        <!-- Due date calculator -->
-        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          <div class="nhsuk-card nhsuk-card--clickable ">
-            <div class="nhsuk-card__content">
-              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
-                Due date calculator
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <!-- Pregnancy and COVID-19 -->
-        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          <div class="nhsuk-card nhsuk-card--clickable ">
-            <div class="nhsuk-card__content">
-              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
-                Pregnancy and COVID-19
-              </a>
-            </div>
-          </div>
-        </li>
-
-      </ul>
-
-
-
       <ul class="nhsuk-grid-row nhsuk-card-group">
 
-        <!-- Trying for a baby -->
+        <!-- Introduction to care and support -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="pregnancy/trying-for-a-baby">
-                  Trying for a baby
+                <a class="nhsuk-card__link" href="">
+                  Introduction to care and support
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Advice about planning a pregnancy and how to tell if you're pregnant</p></div>
+              <div class="nhsuk-card__description"><p>A quick guide for people who have care and support needs and their carers</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -96,16 +73,16 @@
           </div>
         </li>
 
-        <!-- Having a baby if you're LGBT+ -->
+        <!-- Help from social services and charities -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="pregnancy/having-a-baby-if-you-are-lgbt-plus">
-                  Having a baby if you're LGBT+
+                <a class="nhsuk-card__link" href="">
+                  Help from social services and charities
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Find out about starting a family if you're LGBT+</p></div>
+              <div class="nhsuk-card__description"><p>Includes helplines, needs assessments, advocacy and reporting abuse</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
               </div>
@@ -113,16 +90,16 @@
           </div>
         </li>
 
-        <!-- Finding out you're pregnant -->
+        <!-- Care services, equipment and care homes -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="">
-                  Finding out you&#x27;re pregnant
+                  Care services, equipment and care homes
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>What happens and things to think about when you're first pregnant</p></div>
+              <div class="nhsuk-card__description"><p>Includes home adaptations, help at home from a paid carer, staying safe and housing</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -130,34 +107,16 @@
           </div>
         </li>
 
-        <!-- Your pregnancy care -->
+        <!-- Money, work and benefits -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="">
-                  Your pregnancy care
+                  Money, work and benefits
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Read about the scans, tests and antenatal care you can have</p></div>
-              <div class="beta-hub-arrow">
-                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
-              </div>
-            </div>
-          </div>
-        </li>
-
-
-        <!-- Keeping well in pregnancy -->
-        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
-          <div class="nhsuk-card nhsuk-card--clickable ">
-            <div class="nhsuk-card__content beta-card__content">
-              <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="">
-                  Keeping well in pregnancy
-                </a>
-              </h2>
-              <div class="nhsuk-card__description"><p>How to look after yourself and your baby while you're pregnant</p></div>
+              <div class="nhsuk-card__description"><p>How to pay for care and support, and where you can get help with costs</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -166,16 +125,16 @@
         </li>
 
 
-        <!-- Pregnancy week-by-week -->
+        <!-- Care after a hospital stay -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="">
-                  Pregnancy week-by-week
+                  Care after a hospital stay
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Find out what to expect from every week of your pregnancy</p></div>
+              <div class="nhsuk-card__description"><p>Includes hospital discharge and care and support afterwards</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -184,16 +143,16 @@
         </li>
 
 
-        <!-- Pregnancy-related conditions -->
+        <!--  Support and benefits for carers -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="">
-                  Pregnancy-related conditions
+                  Support and benefits for carers
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>What to do about common symptoms, complications and existing conditions</p></div>
+              <div class="nhsuk-card__description"><p>Includes carer's assessments, support from local councils, respite care and help for young carers</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -202,16 +161,16 @@
         </li>
 
 
-        <!-- Labour and birth -->
+        <!-- Practical tips if you care for someone -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="">
-                  Labour and birth
+                  Practical tips if you care for someone
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>How to tell if you're in labour and what happens during labour and birth</p></div>
+              <div class="nhsuk-card__description"><p>Includes advice on challenging behaviour, moving and lifting people and medicines</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -220,16 +179,35 @@
         </li>
 
 
-        <!-- Support -->
+        <!-- Caring for children and young people -->
         <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="">
-                  Support
+                  Caring for children and young people
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Advice for things you might need support with during pregnancy</p></div>
+              <div class="nhsuk-card__description"><p>Services, support and tips if you care for someone under 21, and moving to adult social services</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+
+        <!-- Making decisions for someone else -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Making decisions for someone else
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Includes powers of attorney and mental capacity</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>

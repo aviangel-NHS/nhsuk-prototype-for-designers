@@ -1,310 +1,297 @@
-<!-- Extends the layout from /views/layout.html -->
-{% extends 'template-1.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Menopause - Treatment - NHS
+  Menopause - Things you can do
 {% endblock %}
 
-
-
-
+<!-- Breadcrumbs -->
 {% block beforeContent %}
-<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      
       <li class="nhsuk-breadcrumb__item">
-          <a href="../nhsuk-homepage" class="nhsuk-breadcrumb__link">Home</a>
-        </li>
-        
+        <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../../homepage">Home</a>
+      </li>
       <li class="nhsuk-breadcrumb__item">
-          <a href="../../conditions" class="nhsuk-breadcrumb__link">Health A to Z</a>
-        </li>
-        
+        <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../../conditions">Health A to Z</a>
+      </li>
       <li class="nhsuk-breadcrumb__item">
-          <a href="../menopause" class="nhsuk-breadcrumb__link">Menopause</a>
-        </li>
-        
-      </ol>
+        <a id="breadcrumb-link-2" class="nhsuk-breadcrumb__link" href="../menopause">Menopause</a>
+      </li>
+    </ol>
 
-      <p class="nhsuk-breadcrumb__back">
-        
-          <a href="../menopause" class="nhsuk-breadcrumb__backlink">
-            <span class="nhsuk-u-visually-hidden">Back to </span>
-            Menopause
-          </a>
-        
-      </p>
-    </div>
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="../menopause">
+        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        Menopause
+      </a>
+    </p>
+  </div>
 </nav>
 {% endblock %}
 
 
-
+<!-- Main content -->
 {% block content %}
 
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
-
-      <h1>
-        <span role="text">Treatment
-          <span class="nhsuk-caption-xl nhsuk-caption--bottom">
-            <span class="nhsuk-u-visually-hidden"> - </span>
-            Menopause
-          </span>
-        </span>
-      </h1>
-
-      <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
-        <ol class="nhsuk-contents-list__list">
-
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="../menopause">Overview</a>
-          </li>
-  
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="symptoms">Symptoms</a>
-          </li>
-  
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="things-you-can-do">Things you can do</a>
-          </li>
-
-          <li class="nhsuk-contents-list__item" aria-current="page">
-            <span class="nhsuk-contents-list__current">Treatment</a>
-          </li>
-  
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="help-and-support">Help and support</a>
-          </li>
-
-
-
-
-        </ol>
-      </nav>
-
-    </div>
-  </div>
-
-  <article>
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper  nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
-        <section>
-          <h2>Treatment for menopause and perimenopause</h2>
-          <p>The main medicine treatment for perimenopausal and menopausal symptoms is hormone replacement therapy (HRT), which replaces the hormones that are at low levels.</p> 
-          <p>There are other treatments if you cannot, or chose not to, take HRT.</p>
-        </section>
 
+        <h1>
+          <span role="text">Things you can do
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden"> - </span>
+              Menopause
+            </span>
+          </span>
+        </h1>
 
-        <section>
-          <h2>Hormone replacement therapy (HRT)</h2>
-          <p>HRT is a safe and effective treatment for most going through menopause and perimenopause. Your GP will discuss any risks with you.</p>
-          <p>HRT involves taking oestrogen to replace your body's own levels around the time of the menopause.</p>
-          <p>There are different types and doses of HRT. Taking the right dose and type usually means your symptoms improve.</p>
-          <p>Oestrogen HRT comes as:</p>
-          <ul>
-            <li>skin patches</li>
-            <li>a gel or spray to put on the skin</li>
-            <li>implants</li>
-            <li>tablets</li>
-          </ul>
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+          <ol class="nhsuk-contents-list__list">
 
-          <p>If you have a womb (uterus) you also need to take progesterone to protect your womb lining from the effects of oestrogen. Taking oestrogen and progesterone is called combined HRT.</p>
-
-          <p>Progesterone comes as: </p>
-          <ul>
-            <li>patches, as part of a combined patch with oestrogen</li>
-            <li>IUS (intrauterine system, or coil)</li>
-            <li>tablets</li>
-          </ul>
-          <p>If you have low sex drive because of the menopause and HRT does not improve it, you may be offered testosterone.</p>
-        </section>
-
-
-        <section>
-          <h3>Benefits of HRT</h3>
-          <p>The main benefit of HRT is that it can help relieve most perimenopausal and menopausal symptoms, including hot flushes, brain fog, joint pains, mood swings and vaginal dryness.</p>
-          <p>Hot flushes or night sweats often improve within a few weeks. Other symptoms like mood changes and vaginal dryness can take a few months to improve.</p>
-          <p>Taking HRT can also reduce your risk of hormone-related health problems including osteoporosis and heart disease.</p>
-        </section>
-
-
-        <section>
-          <h3>Risks of HRT</h3>
-          <p>The risks of HRT are small and are usually outweighed by the benefits.</p>
-          <p>If you're interested in HRT, your doctor or nurse can discuss the risks with you.</p>
-        </section>
-
-        <section>
-          <h3>More information</h3>
-          <p>Find out more about <a href="">hormone replacement therapy (HRT)</a></p>
-          <p>Find out <a href="">how to save money on HRT medicines with a prescription prepayment certificate</a>.</p>
-        </section>
-
-        
-        <section>
-          <h2>Testosterone gel for reduced sex drive</h2>
-          <p>If HRT does not help restore your sex drive, you might be offered a testosterone gel or cream. It can help improve sex drive, mood and energy levels.</p>
-          <p>Testosterone is produced by the ovaries and your levels usually get lower with age.</p>
-          <p>It's not currently licenced for use in women, although it can be prescribed after the menopause by a specialist doctor if they think it might help restore your sex drive.</p>
-          <p>You can safely use this at the same time as HRT.</p>
-          <p>Side effects of using testosterone are not common but include acne and unwanted hair growth.</p>
-          <p>Testosterone gel or cream can also cause side effects in others if they come into contact with it regularly. To avoid this, wash your hands after using it and cover the area with clothing.</p>
-          <p>Read more about <a href="">loss of libido</a>.</p>
-        </section>
-
-        <section>
-          <h2>Oestrogen for vaginal dryness and discomfort</h2>
-          <p>Your vagina may become dry, painful or itchy as a result of the menopause and perimenopause.</p>
-          <p>A GP can prescribe <a href="">oestrogen treatments you can insert into your vagina</a>, as a tablet, cream or ring. This can also improve any urinary symptoms caused by menopause and perimenopause, like discomfort when you pee.</p>
-          <p>These vaginal oestrogen treatments do not get into your bloodstream and only work on the bit of the body where you put them. You can use them for the rest of your life. Symptoms usually come back when you stop using them.</p><p data-block-key="16uu5">It's safe to use vaginal oestrogen with HRT.</p>
-          <p>Read more about <a href="">vaginal dryness</a>.</p>
-        </section>
-
-        <section>
-            <h2>Non-hormone medicines</h2>
-            <p>There are non-hormone treatments if your symptoms are having a big impact on your life and you cannot, or choose not to, have HRT.</p>
-            <h3>Hot flushes and night sweats</h3>
-            <p>There are some medicines that can help with hot flushes and night sweats.</p>
-            <p>These include:</p>
-            <ul>
-              <li>a blood pressure medicine called <a href="">clonidine</a></li>
-              <li>an epilepsy medicine called <a href="">gabapentin</a></li>
-            </ul>
-            <p>Talk with a GP about these medicines and their side effects, and if they might be suitable for you.</p>
-  
-            <h3>Mood symptoms</h3>
-            <p>Antidepressants can help with mood symptoms if you've been diagnosed with depression or anxiety.</p>
-            <h3>Cognitive behavioural therapy (CBT)</h3>
-            <p>Cognitive behavioural therapy (CBT) is a talking therapy which can help with:</p>
-            <ul>
-              <li>low mood and anxiety caused by menopause and perimenopause</li>
-              <li>some physical symptoms like hot flushes and joint pain</li>
-            </ul>
-            <p>You can get NHS talking therapy without going to a GP first.</p>
-      
-            <div class="nhsuk-action-link">
-              <a class="nhsuk-action-link__link" href="">
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                </svg>
-                <span class="nhsuk-action-link__text">Find an NHS talking therapies service</span>
-              </a>
-            </div>
-        </section>
-
-        <section>
-          <h2>Cognitive behavioural therapy (CBT)</h2>
-          <p>Cognitive behavioural therapy (CBT) is a talking therapy which can help with:</p>
-          <ul>
-            <li>menopausal low mood and anxiety</li>
-            <li>some physical symptoms like hot flushes and joint pain</li>
-          </ul>
-          <p>You can get NHS talking therapy without going to a GP first.</p>
-
-          <div class="nhsuk-action-link">
-            <a class="nhsuk-action-link__link" href="https://www.nhs.uk/service-search/find-a-psychological-therapies-service/">
-              <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-              </svg>
-              <span class="nhsuk-action-link__text">Find an NHS psychological therapies service</span>
-            </a>
-          </div>
-        </section>
-
-        <br>  
-
-        <section>
-          <h2>Follow-up appointments</h2>
-          <p>If you're having treatment for your symptoms of menopause or perimenopause, you'll need to return to the doctor or nurse who is prescribing your HRT for a follow-up review after 3 months.</p>
-          <p>When you and your doctor or nurse agree your treatment is working well for you, you’ll need to see them once a year.</p>
-          <p>During your reviews, your GP or nurse may:</p>
-          <ul>
-            <li>make sure your symptoms are under control</li>
-            <li>ask about any side effects and bleeding patterns</li>
-            <li>check your weight and blood pressure</li>
-            <li>review the type of HRT you're taking and make any necessary changes</li>
-          </ul>
-          <p>You may need treatment for a few years, until most of your menopause and perimenopause symptoms have passed.</p>
-          <p>You can choose to continue taking HRT. The doctor or nurse prescribing your HRT can discuss with you the benefits and risks, so you can decide what's right for you.</p>
-          <p>You can take HRT for as long as you need it. You can discuss this with your doctor or nurse at your yearly review.</p>
-        </section>
-
-      <br>  
-        <section>
-          <h2>Complementary and alternative therapies</h2>
-          <p>Complementary and alternative treatments, such as herbal remedies and compounded bioidentical ("natural") hormones, are not recommended for symptoms of the perimenopause or menopause.</p>
-          <p>This is because it's not clear how safe or effective they are.</p>
-          <p>Red clover and black cohosh are herbal remedies but there is no strong evidence they work.</p>
-          <p>Some complementary and alternative therapies can also interact with other medicines and cause side effects.</p>
-          <p>Ask your GP or pharmacist for advice if you're thinking about using a complementary therapy.</p>
-        </section>
-
-        <section>
-          <h3>Compounded bioidentical hormones</h3>
-          <p>Compounded bioidentical hormones are sometimes offered in private clinics as HRT. They are not recommended because it's not known how well they work or how safe they are. They are not available on the NHS.</p>
-          <p>They are different from regulated bioidentical hormones, also called body identical hormones.</p>
-          <p>Bioidentical hormones are available on the NHS as HRT. They have been tested to see how well they work and how safe they are.</p>
-        </section>
-
-
-
-        <div>
-          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
-            Page last reviewed: 17 May 2022<br>
-            Next review due: 17 May 2025
-          </p>
-        </div>
-
-        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
-          <ul class="nhsuk-list nhsuk-pagination__list">
-            <li class="nhsuk-pagination-item--previous">
-              <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="things-you-can-do">
-                <span class="nhsuk-pagination__title">Previous</span>
-                <span class="nhsuk-u-visually-hidden">:</span>
-                <span class="nhsuk-pagination__page">Things you can do</span>
-                <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  aria-hidden="true" width="34" height="34">
-                  <path
-                    d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
-                  </path>
-                </svg>
-              </a>
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="../menopause">Overview</a>
             </li>
 
-            <li class="nhsuk-pagination-item--next">
-              <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="help-and-support">
-                <span class="nhsuk-pagination__title">Next</span>
-                <span class="nhsuk-u-visually-hidden">:</span>
-                <span class="nhsuk-pagination__page">Help and support</span>
-                <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  aria-hidden="true" width="34" height="34">
-                  <path
-                    d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
-                  </path>
-                </svg>
-              </a>
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="symptoms">Symptoms</a>
             </li>
-          </ul>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="things-you-can-do">Things you can do</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item" aria-current="page">
+              <span class="nhsuk-contents-list__current">Treatment</span>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="help-and-support">Help and support</a>
+            </li>
+
+          </ol>
         </nav>
 
       </div>
-
     </div>
-  </article>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+          <section>
+            <h2>Treatment for menopause and perimenopause</h2>
+            <p>The main medicine treatment for perimenopausal and menopausal symptoms is hormone replacement therapy (HRT), which replaces the hormones that are at low levels.</p> 
+            <p>There are other treatments if you cannot, or chose not to, take HRT.</p>
+          </section>
+  
+  
+          <section>
+            <h2>Hormone replacement therapy (HRT)</h2>
+            <p>HRT is a safe and effective treatment for most going through menopause and perimenopause. Your GP will discuss any risks with you.</p>
+            <p>HRT involves taking oestrogen to replace your body's own levels around the time of the menopause.</p>
+            <p>There are different types and doses of HRT. Taking the right dose and type usually means your symptoms improve.</p>
+            <p>Oestrogen HRT comes as:</p>
+            <ul>
+              <li>skin patches</li>
+              <li>a gel or spray to put on the skin</li>
+              <li>implants</li>
+              <li>tablets</li>
+            </ul>
+  
+            <p>If you have a womb (uterus) you also need to take progesterone to protect your womb lining from the effects of oestrogen. Taking oestrogen and progesterone is called combined HRT.</p>
+  
+            <p>Progesterone comes as: </p>
+            <ul>
+              <li>patches, as part of a combined patch with oestrogen</li>
+              <li>IUS (intrauterine system, or coil)</li>
+              <li>tablets</li>
+            </ul>
+            <p>If you have low sex drive because of the menopause and HRT does not improve it, you may be offered testosterone.</p>
+          </section>
+  
+  
+          <section>
+            <h3>Benefits of HRT</h3>
+            <p>The main benefit of HRT is that it can help relieve most perimenopausal and menopausal symptoms, including hot flushes, brain fog, joint pains, mood swings and vaginal dryness.</p>
+            <p>Hot flushes or night sweats often improve within a few weeks. Other symptoms like mood changes and vaginal dryness can take a few months to improve.</p>
+            <p>Taking HRT can also reduce your risk of hormone-related health problems including osteoporosis and heart disease.</p>
+          </section>
+  
+  
+          <section>
+            <h3>Risks of HRT</h3>
+            <p>The risks of HRT are small and are usually outweighed by the benefits.</p>
+            <p>If you're interested in HRT, your doctor or nurse can discuss the risks with you.</p>
+          </section>
+  
+          <section>
+            <h3>More information</h3>
+            <p>Find out more about <a href="">hormone replacement therapy (HRT)</a></p>
+            <p>Find out <a href="">how to save money on HRT medicines with a prescription prepayment certificate</a>.</p>
+          </section>
+  
+          
+          <section>
+            <h2>Testosterone gel for reduced sex drive</h2>
+            <p>If HRT does not help restore your sex drive, you might be offered a testosterone gel or cream. It can help improve sex drive, mood and energy levels.</p>
+            <p>Testosterone is produced by the ovaries and your levels usually get lower with age.</p>
+            <p>It's not currently licenced for use in women, although it can be prescribed after the menopause by a specialist doctor if they think it might help restore your sex drive.</p>
+            <p>You can safely use this at the same time as HRT.</p>
+            <p>Side effects of using testosterone are not common but include acne and unwanted hair growth.</p>
+            <p>Testosterone gel or cream can also cause side effects in others if they come into contact with it regularly. To avoid this, wash your hands after using it and cover the area with clothing.</p>
+            <p>Read more about <a href="">loss of libido</a>.</p>
+          </section>
+  
+          <section>
+            <h2>Oestrogen for vaginal dryness and discomfort</h2>
+            <p>Your vagina may become dry, painful or itchy as a result of the menopause and perimenopause.</p>
+            <p>A GP can prescribe <a href="">oestrogen treatments you can insert into your vagina</a>, as a tablet, cream or ring. This can also improve any urinary symptoms caused by menopause and perimenopause, like discomfort when you pee.</p>
+            <p>These vaginal oestrogen treatments do not get into your bloodstream and only work on the bit of the body where you put them. You can use them for the rest of your life. Symptoms usually come back when you stop using them.</p><p data-block-key="16uu5">It's safe to use vaginal oestrogen with HRT.</p>
+            <p>Read more about <a href="">vaginal dryness</a>.</p>
+          </section>
+  
+          <section>
+              <h2>Non-hormone medicines</h2>
+              <p>There are non-hormone treatments if your symptoms are having a big impact on your life and you cannot, or choose not to, have HRT.</p>
+              <h3>Hot flushes and night sweats</h3>
+              <p>There are some medicines that can help with hot flushes and night sweats.</p>
+              <p>These include:</p>
+              <ul>
+                <li>a blood pressure medicine called <a href="">clonidine</a></li>
+                <li>an epilepsy medicine called <a href="">gabapentin</a></li>
+              </ul>
+              <p>Talk with a GP about these medicines and their side effects, and if they might be suitable for you.</p>
+    
+              <h3>Mood symptoms</h3>
+              <p>Antidepressants can help with mood symptoms if you've been diagnosed with depression or anxiety.</p>
+              <h3>Cognitive behavioural therapy (CBT)</h3>
+              <p>Cognitive behavioural therapy (CBT) is a talking therapy which can help with:</p>
+              <ul>
+                <li>low mood and anxiety caused by menopause and perimenopause</li>
+                <li>some physical symptoms like hot flushes and joint pain</li>
+              </ul>
+              <p>You can get NHS talking therapy without going to a GP first.</p>
+        
+              <div class="nhsuk-action-link">
+                <a class="nhsuk-action-link__link" href="">
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                  </svg>
+                  <span class="nhsuk-action-link__text">Find an NHS talking therapies service</span>
+                </a>
+              </div>
+          </section>
+  
+          <section>
+            <h2>Cognitive behavioural therapy (CBT)</h2>
+            <p>Cognitive behavioural therapy (CBT) is a talking therapy which can help with:</p>
+            <ul>
+              <li>menopausal low mood and anxiety</li>
+              <li>some physical symptoms like hot flushes and joint pain</li>
+            </ul>
+            <p>You can get NHS talking therapy without going to a GP first.</p>
+  
+            <div class="nhsuk-action-link">
+              <a class="nhsuk-action-link__link" href="https://www.nhs.uk/service-search/find-a-psychological-therapies-service/">
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="nhsuk-action-link__text">Find an NHS psychological therapies service</span>
+              </a>
+            </div>
+          </section>
+  
+          <br>  
+  
+          <section>
+            <h2>Follow-up appointments</h2>
+            <p>If you're having treatment for your symptoms of menopause or perimenopause, you'll need to return to the doctor or nurse who is prescribing your HRT for a follow-up review after 3 months.</p>
+            <p>When you and your doctor or nurse agree your treatment is working well for you, you’ll need to see them once a year.</p>
+            <p>During your reviews, your GP or nurse may:</p>
+            <ul>
+              <li>make sure your symptoms are under control</li>
+              <li>ask about any side effects and bleeding patterns</li>
+              <li>check your weight and blood pressure</li>
+              <li>review the type of HRT you're taking and make any necessary changes</li>
+            </ul>
+            <p>You may need treatment for a few years, until most of your menopause and perimenopause symptoms have passed.</p>
+            <p>You can choose to continue taking HRT. The doctor or nurse prescribing your HRT can discuss with you the benefits and risks, so you can decide what's right for you.</p>
+            <p>You can take HRT for as long as you need it. You can discuss this with your doctor or nurse at your yearly review.</p>
+          </section>
+  
+        <br>  
+          <section>
+            <h2>Complementary and alternative therapies</h2>
+            <p>Complementary and alternative treatments, such as herbal remedies and compounded bioidentical ("natural") hormones, are not recommended for symptoms of the perimenopause or menopause.</p>
+            <p>This is because it's not clear how safe or effective they are.</p>
+            <p>Red clover and black cohosh are herbal remedies but there is no strong evidence they work.</p>
+            <p>Some complementary and alternative therapies can also interact with other medicines and cause side effects.</p>
+            <p>Ask your GP or pharmacist for advice if you're thinking about using a complementary therapy.</p>
+          </section>
+  
+          <section>
+            <h3>Compounded bioidentical hormones</h3>
+            <p>Compounded bioidentical hormones are sometimes offered in private clinics as HRT. They are not recommended because it's not known how well they work or how safe they are. They are not available on the NHS.</p>
+            <p>They are different from regulated bioidentical hormones, also called body identical hormones.</p>
+            <p>Bioidentical hormones are available on the NHS as HRT. They have been tested to see how well they work and how safe they are.</p>
+          </section>
+  
+  
+  
+          <div>
+            <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+              Page last reviewed: 17 May 2022<br>
+              Next review due: 17 May 2025
+            </p>
+          </div>
+  
+          <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+            <ul class="nhsuk-list nhsuk-pagination__list">
+              <li class="nhsuk-pagination-item--previous">
+                <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="things-you-can-do">
+                  <span class="nhsuk-pagination__title">Previous</span>
+                  <span class="nhsuk-u-visually-hidden">:</span>
+                  <span class="nhsuk-pagination__page">Things you can do</span>
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    aria-hidden="true" width="34" height="34">
+                    <path
+                      d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+  
+              <li class="nhsuk-pagination-item--next">
+                <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="help-and-support">
+                  <span class="nhsuk-pagination__title">Next</span>
+                  <span class="nhsuk-u-visually-hidden">:</span>
+                  <span class="nhsuk-pagination__page">Help and support</span>
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    aria-hidden="true" width="34" height="34">
+                    <path
+                      d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+  
+        </div>
+  
+      </div>
+    </article>
+
+  </main>
+</div>
 
 {% endblock %}
-
-
-

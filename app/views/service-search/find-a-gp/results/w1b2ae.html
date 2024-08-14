@@ -1,0 +1,476 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  GP surgeries near W1B 2AE
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../../homepage">Home</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../../../nhs-services">NHS services</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-2" class="nhsuk-breadcrumb__link" href="../../../nhs-services/gps">GPs</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-3" class="nhsuk-breadcrumb__link" href="../../find-a-gp">Find a GP</a>
+        </li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back">
+        <a class="nhsuk-breadcrumb__backlink" href="../../../nhs-services/gps">
+          <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+          GPs
+        </a>
+      </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Main content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-u-reading-width">
+      <h1>GP surgeries near W1B 2AE</h1>
+    </div>
+
+    <div class="results">
+      <p class="nhsuk-u-font-size-22">Closest listed first</p>
+
+        <div>
+
+        <div id="panel-wrapper">
+          <div id="panel" style="background-color: white;">
+            <details class="nhsuk-details nhsuk-expander" id="details">
+              <summary class="nhsuk-details__summary" id="summary">
+                <span class="nhsuk-details__summary-text">
+                  Filter results
+                </span>
+              </summary>
+
+              <div id="filter-panel" class="nhsuk-details__text nhsuk-form-group__fieldset">
+                <form name="FindGpFilterForm" id="find-gp-filter-form" method="get" aria-label="filter services form" action="/service-search/find-a-gp/results/W1B%202AE">
+                                  <div id="filters" class="nhsuk-form-group">
+                                      <input type="hidden" value="W1B 2AE" id="Location" name="Location">
+                                      <input type="hidden" id="GP_lat" name="Latitude">
+                                      <input type="hidden" id="GP_lon" name="Longitude">
+                                      
+                                      <fieldset class="nhsuk-fieldset">
+                                          <legend class="nhsuk-u-visually-hidden">Filters</legend>
+                                          <div class="nhsuk-checkboxes">
+                                              <div class="nhsuk-checkboxes__item form-group">
+                                                  <input type="checkbox" id="filter_option_1" name="gpNewPatients" value="true" class="nhsuk-checkboxes__input hidden-when-collapsed" tabindex="-1">
+                                                  <label for="filter_option_1" class="nhsuk-label nhsuk-checkboxes__label nhsuk-checkboxes__label-mobile-filter">Accepting new patients</label>
+                                              </div>
+                                              <div class="nhsuk-checkboxes__item form-group">
+                                                  <input type="checkbox" id="filter_option_2" name="GpOutOfArea" value="true" class="nhsuk-checkboxes__input hidden-when-collapsed" tabindex="-1">
+                                                  <label for="filter_option_2" class="nhsuk-label nhsuk-checkboxes__label nhsuk-checkboxes__label-mobile-filter">Accepts out of area registrations</label>
+                                              </div>
+                                              <div class="nhsuk-checkboxes__item form-group">
+                                                  <input type="checkbox" id="filter_option_3" name="gpOnlineReg" value="true" class="nhsuk-checkboxes__input hidden-when-collapsed" tabindex="-1">
+                                                  <label for="filter_option_3" class="nhsuk-label nhsuk-checkboxes__label nhsuk-checkboxes__label-mobile-filter">Online registration available</label>
+                                              </div>
+                                          </div>
+                                      </fieldset>
+                                  </div>
+
+                                  <div id="filter-actions" class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5 nhsuk-u-border-top nhsuk-u-margin-left-0 nhsuk-u-sticky-bottom">
+                                      <div id="filter-link-actions" class="nhsuk-u-justify-spaced nhsuk-u-font-smaller" style="display: flex;">
+                                          <a href="#" class="nhsapp-open-in-webview nhsuk-link--no-visited-state hidden-when-collapsed" id="clear-all-filters" tabindex="-1">Clear all filters</a>
+                                      </div>
+                                      <div id="filter-apply" class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                                          <button class="nhsuk-button nhsuk-u-margin-bottom-4 hidden-when-collapsed" data-module="nhsuk-button" type="submit" id="apply-filters-button" tabindex="-1">Apply filters</button>
+                                      </div>
+                                  </div>
+                </form>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div id="num-selected" class="nhsuk-u-margin-top-4">
+          <p id="num-filters">0 filters applied</p>
+          </div>
+        </div>
+
+        <h2 id="catchment_gps">GPs covering your postcode</h2>
+        <ol id="catchment_gps_list" class="nhsuk-list results service-results">
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Mayfair Medical Centre</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_0" class="nhsuk-u-visually-hidden" aria-hidden="true">E87648</p>
+                    <p id="item_org_type_id_0" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_0" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.3 miles away</p>
+
+                    <h2 id="orgname_0" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href="https://www.nhs.uk/services/gp-surgery/mayfair-medical-centre/XE87648"><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Mayfair Medical Centre</a></h2>
+                    <p id="address_0" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        3-5 Weighhouse Street, London, Greater London, W1K 5LS
+                    </p>
+
+                    <p id="phone_0" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02074931647
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_0" href="https://www.google.com/maps/dir/?api=1&amp;origin=51.51501928916459%2c-0.14261721099308294&amp;destination=3-5+Weighhouse+Street%2c+London%2c+Greater+London%2c+W1K+5LS&amp;t=m" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                    <p class="nhsuk-u-margin-top-3">
+                      <strong id="result_item_0_tag_1" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepting new patients</strong>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Mayfair Medical Centre</span>
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Soho Square General Practice</span>
+              
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_1" class="nhsuk-u-visually-hidden" aria-hidden="true">E87714</p>
+                    <p id="item_org_type_id_1" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_1" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.5 miles away</p>
+
+                    <h2 id="orgname_1" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href="https://www.nhs.uk/services/gp-surgery/soho-square-general-practice/XE87714"><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Soho Square General Practice</a></h2>
+
+                    <p id="address_1" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        1St Floor, 1 Frith Street, London, Greater London, W1D 3HZ
+                    </p>
+
+                    <p id="phone_1" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02034056570
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_1" href="https://www.google.com/maps/dir/?api=1&amp;origin=51.51501928916459%2c-0.14261721099308294&amp;destination=1St+Floor%2c+1+Frith+Street%2c+London%2c+Greater+London%2c+W1D+3HZ&amp;t=m" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+                            
+                    <p class="nhsuk-u-margin-top-3">
+                      <strong id="result_item_0_tag_1" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepting new patients</strong>
+                    </p>
+
+                    <div class="nhsuk-action-link nhsuk-u-padding-top-2">
+                      <a id="reg_link_1" class="nhsuk-action-link__link" href="https://gp-registration.nhs.uk/E87714">
+                        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                          </svg>
+                        <span class="nhsuk-action-link__text">Register online with this GP</span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Soho Square General Practice</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Soho Centre For Health And Care</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_2" class="nhsuk-u-visually-hidden" aria-hidden="true">E87069</p>
+                    <p id="item_org_type_id_2" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_2" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.5 miles away</p>
+
+                    <h2 id="orgname_2" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href="https://www.nhs.uk/services/gp-surgery/soho-centre-for-health-and-care/XE87069"><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Soho Centre For Health And Care</a></h2>
+
+                    <p id="address_2" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        1St Floor, 30 Soho Square, London, Greater London, W1D 3QS
+                    </p>
+
+                    <p id="phone_2" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02034056540
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_2" href="https://www.google.com/maps/dir/?api=1&amp;origin=51.51501928916459%2c-0.14261721099308294&amp;destination=1St+Floor%2c+30+Soho+Square%2c+London%2c+Greater+London%2c+W1D+3QS&amp;t=m" rel="noreferrer" class="maplink">
+                        Map and directions
+                          <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                    <p class="nhsuk-u-margin-top-3">
+                      <strong id="result_item_2_tag_1" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepting new patients</strong>
+                      <strong id="result_item_2_tag_2" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepts out of area registrations</strong>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Soho Centre For Health And Care</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Fitzrovia Medical Centre</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_3" class="nhsuk-u-visually-hidden" aria-hidden="true">E87066</p>
+                    <p id="item_org_type_id_3" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_3" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.5 miles away</p>
+            
+                    <h2 id="orgname_3" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href="https://www.nhs.uk/services/gp-surgery/fitzrovia-medical-centre/XE87066"><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Fitzrovia Medical Centre</a></h2>
+
+
+                    <p id="address_3" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        31 Fitzroy Square, London, Greater London, W1T 6EU
+                    </p>
+
+                    <p id="phone_3" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02073875798
+                    </p>
+                                
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_3" href="https://www.google.com/maps/dir/?api=1&amp;origin=51.51501928916459%2c-0.14261721099308294&amp;destination=31+Fitzroy+Square%2c+London%2c+Greater+London%2c+W1T+6EU&amp;t=m" rel="noreferrer" class="maplink">
+                        Map and directions
+                          <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+                        
+                    <p class="nhsuk-u-margin-top-3">
+                      <strong id="result_item_3_tag_1" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepting new patients</strong>
+                    </p>
+            
+                    <div class="nhsuk-action-link nhsuk-u-padding-top-2">
+                      <a id="reg_link_3" class="nhsuk-action-link__link" href="https://gp-registration.nhs.uk/E87066">
+                        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                        </svg>
+                        <span class="nhsuk-action-link__text">Register online with this GP</span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+          
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Fitzrovia Medical Centre</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Lees Place Medical Centre</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+
+                  <div>
+
+                    <p id="item_id_4" class="nhsuk-u-visually-hidden" aria-hidden="true">E87002001</p>
+                    <p id="item_org_type_id_4" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_4" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.5 miles away</p>
+              
+                    <h2 id="orgname_4" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href="https://www.nhs.uk/services/gp-surgery/lees-place-medical-centre/XE87002001"><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Lees Place Medical Centre</a></h2>
+
+                    <p id="address_4" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        11 Lees Place, London, Greater London, W1K 6LN
+                    </p>
+
+                    <p id="phone_4" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02070366060
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_4" href="https://www.google.com/maps/dir/?api=1&amp;origin=51.51501928916459%2c-0.14261721099308294&amp;destination=11+Lees+Place%2c+London%2c+Greater+London%2c+W1K+6LN&amp;t=m" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                    <p class="nhsuk-u-margin-top-3">
+                      <strong id="result_item_4_tag_1" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepting new patients</strong>
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+          
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Lees Place Medical Centre</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Marylebone Health Centre</span>
+            
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_5" class="nhsuk-u-visually-hidden" aria-hidden="true">E87737</p>
+                    <p id="item_org_type_id_5" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_5" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.7 miles away</p>
+
+                    <h2 id="orgname_5" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href="https://www.nhs.uk/services/gp-surgery/marylebone-health-centre/XE87737"><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Marylebone Health Centre</a></h2>
+
+                    <p id="address_5" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        17 Marylebone Road, London, Greater London, NW1 5LT
+                    </p>
+
+                    <p id="phone_5" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02079356328
+                    </p>
+                                
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_5" href="https://www.google.com/maps/dir/?api=1&amp;origin=51.51501928916459%2c-0.14261721099308294&amp;destination=17+Marylebone+Road%2c+London%2c+Greater+London%2c+NW1+5LT&amp;t=m" rel="noreferrer" class="maplink">
+                        Map and directions
+                          <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                        </a>
+                    </p>
+
+                    <p class="nhsuk-u-margin-top-3">
+                      <strong id="result_item_5_tag_1" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepting new patients</strong>
+                        <strong id="result_item_5_tag_2" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepts out of area registrations</strong>
+                    </p>
+    
+                    <div class="nhsuk-action-link nhsuk-u-padding-top-2">
+                    <a id="reg_link_5" class="nhsuk-action-link__link" href="https://gp-registration.nhs.uk/E87737">
+                      <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                          </svg>
+                        <span class="nhsuk-action-link__text">Register online with this GP</span>
+                        </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Marylebone Health Centre</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+
+              <span class="nhsuk-u-visually-hidden">&nbsp; Result for &nbsp; Connaught Square Practice</span>
+
+              <div class="nhsuk-grid-row results__details">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                  <div>
+
+                    <p id="item_id_6" class="nhsuk-u-visually-hidden" aria-hidden="true">E87037</p>
+                    <p id="item_org_type_id_6" class="nhsuk-u-visually-hidden" aria-hidden="true">GPB</p>
+                    <p id="distance_6" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">This organisation is &nbsp;</span>0.9 miles away</p>
+                
+                    <h2 id="orgname_6" class="results__name nhsuk-u-padding-top-0"><a class="nhsapp-open-in-webview" href="https://www.nhs.uk/services/gp-surgery/connaught-square-practice/XE87037"><span class="nhsuk-u-visually-hidden">&nbsp; navigates to more detail for &nbsp;</span>Connaught Square Practice</a></h2>
+
+                    <p id="address_6" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Address for this organisation is &nbsp;</span>
+                        41 Connaught Square, London, Greater London, W2 2HL
+                    </p>
+
+                    <p id="phone_6" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                      <span class="nhsuk-u-visually-hidden">Phone number for this organisation is &nbsp;</span>
+                        02074024026
+                    </p>
+
+                    <p class="nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-0">
+                      <a id="map_link_6" href="https://www.google.com/maps/dir/?api=1&amp;origin=51.51501928916459%2c-0.14261721099308294&amp;destination=41+Connaught+Square%2c+London%2c+Greater+London%2c+W2+2HL&amp;t=m" rel="noreferrer" class="maplink">
+                        Map and directions
+                        <span class="nhsuk-u-visually-hidden">&nbsp;for this organisation</span>
+                      </a>
+                    </p>
+
+                    <p class="nhsuk-u-margin-top-3">
+                      <strong id="result_item_6_tag_1" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepting new patients</strong>
+                        <strong id="result_item_6_tag_2" class="nhsuk-tag nhsuk-tag--white nhsuk-u-margin-top-1">Accepts out of area registrations</strong>
+                    </p>
+            
+                    <div class="nhsuk-action-link nhsuk-u-padding-top-2">
+                      <a id="reg_link_6" class="nhsuk-action-link__link" href="https://gp-registration.nhs.uk/E87037">
+                        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                        </svg>
+                        <span class="nhsuk-action-link__text">Register online with this GP</span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+          
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Connaught Square Practice</span>
+
+            </li>
+
+
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+              <span class="nhsuk-u-visually-hidden">&nbsp; End of result for &nbsp; Wellington Health Centre</span>
+            </li>
+
+        </ol>
+
+    </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,7 +1,11 @@
-{% extends 'template-1.html' %}
+{% extends 'template-nhs.html' %}
 
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
 {% block pageTitle %}
-  NHS App and your NHS account - NHS
+  NHS App - NHS
 {% endblock %}
 
 {% block headCSS %}
@@ -12,29 +16,29 @@
 
 
 {% block beforeContent %}
-
 <!-- Breadcrumbs -->
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item">
-        <a href="nhsuk-homepage" class="nhsuk-breadcrumb__link">Home</a>
-      </li>
+      <li class="nhsuk-breadcrumb__item"><a href="../homepage" class="nhsuk-breadcrumb__link">Home</a></li>
     </ol>
     <p class="nhsuk-breadcrumb__back">
-      <a href="" class="nhsuk-breadcrumb__backlink">Back to Home</a>
+      <a href="../homepage" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
     </p>
   </div>
 </nav>
 {% endblock %}
 
 
-<!-- Live Well content -->
+<!-- Live well content -->
 {% block content %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
 
+    <!-- Heading and lede text -->
     <div class="nhsuk-u-reading-width">
       <h1>NHS App</h1>
       <p class="nhsuk-lede-text">
@@ -43,98 +47,96 @@
     </div>
 
     <article>
+      <h2 class="nhsuk-u-visually-hidden">Top tasks in Live Well</h2>
 
       <ul class="nhsuk-grid-row nhsuk-card-group">
-          <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable ">
-              <div class="nhsuk-card__content beta-card__content">
-                <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="">
-                    About your NHS App
-                  </a>
-                </h2>
-                <div class="nhsuk-card__description"><p data-block-key="khxwp">Find out more about using the NHS App, or the NHS website, to access services online</p></div>
-                
-                <div class="beta-hub-arrow">
-                  <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
-                </div>
-                
+
+        <!-- About your NHS App -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  About your NHS App
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Find out more about using the NHS App, or the NHS website, to access services online</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
             </div>
-          </li>
-    
-          <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable ">
-              <div class="nhsuk-card__content beta-card__content">
-                <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="">
-                    NHS App help and support
-                  </a>
-                </h2>
-                <div class="nhsuk-card__description"><p data-block-key="vaty7">Get help and support with your NHS App</p></div>
-                
-                <div class="beta-hub-arrow">
-                  <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
-                </div>
-                
+          </div>
+        </li>
+
+        <!-- NHS App help and support -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  NHS App help and support
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Get help and support with your NHS App</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
               </div>
             </div>
-          </li>
-        
-          <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable ">
-              <div class="nhsuk-card__content beta-card__content">
-                <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="">
-                    NHS App legal and cookies
-                  </a>
-                </h2>
-                <div class="nhsuk-card__description"><p data-block-key="ainjb">Read our terms of use, privacy policy, cookies policy and more</p></div>
-                
-                <div class="beta-hub-arrow">
-                  <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
-                </div>
-                
+          </div>
+        </li>
+
+        <!-- NHS App legal and cookies -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  NHS App legal and cookies
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Read our terms of use, privacy policy, cookies policy and more</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
             </div>
-          </li>
-        
+          </div>
+        </li>
+
       </ul>
-    
+
       <div class="nhsuk-u-reading-width beta-hub-bottom-content">
-        
         <p>The NHS App is available on iOS and Android:</p>
-
-        <figure class="app-apps-store-link">
-          <div class="nhsuk-c-image__container">
-            <a href="https://itunes.apple.com/us/app/nhs-app/id1388411277?ls=1&amp;mt=8">
-              <img class="nhsuk-c-image__img" alt="Download on the App store" src="/images/apple-store-badge.2928664fe1fc.svg">
-            </a>
-          </div>
-        </figure>
-        <figure class="app-apps-store-link">
-          <div class="nhsuk-c-image__container">
-            <a href="https://play.google.com/store/apps/details?id=com.nhs.online.nhsonline">
-              <img class="nhsuk-c-image__img" alt="Download on Google Play" src="/images/google-play-badge.c4182f13038b.png">
-            </a>
-          </div>
-        </figure>
-
-        <p>You can also <a href="https://www.nhsapp.service.nhs.uk/login">use the NHS website</a>.</p><p data-block-key="5k1fs">To use the NHS App, you must be aged 13 or over and registered with a GP surgery in England.</p><p data-block-key="8o3i0">Find out more about <a href="/nhs-app/nhs-app-help-and-support/getting-started-with-the-nhs-app/who-can-use-the-nhs-app/">who can use the NHS App</a>.</p>
-
+          <figure class="app-apps-store-link">
+            <div class="nhsuk-c-image__container">
+              <a href="">
+                <img class="nhsuk-c-image__img" alt="Download on the App store" src="https://www.nhs.uk/static/nhsuk/img/apple-store-badge.2928664fe1fc.svg">
+              </a>
+            </div>
+          </figure>
+          <figure class="app-apps-store-link">
+            <div class="nhsuk-c-image__container">
+              <a href="">
+                <img class="nhsuk-c-image__img" alt="Download on Google Play" src="https://www.nhs.uk/static/nhsuk/img/google-play-badge.c4182f13038b.png">
+              </a>
+            </div>
+          </figure>
+    
+        <p>You can also <a href="">use the NHS website</a>.</p>
+        <p>To use the NHS App, you must be aged 13 or over and registered with a GP surgery in England.</p>
+        <p>Find out more about <a href="">who can use the NHS App</a>.</p>
       </div>
-
+      
     </article>
 
   </div>
 </div>
+
 
 {% endblock %}
 
 
 
 
-<!-- JavaScript hack to do nothing if search button or link href="" clicked -->
 {% block pageScripts %}
 <script>
   $( document ).ready(function() {

@@ -1,4 +1,4 @@
-{% extends 'template-1.html' %}
+{% extends 'template-nhs.html' %}
 
 {% block pageTitle %}
   Health A to Z - NHS
@@ -10,18 +10,17 @@
 {% endblock %}
 
 
-
 {% block beforeContent %}
 <!-- Breadcrumbs -->
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item">
-        <a href="" class="nhsuk-breadcrumb__link">Home</a>
+        <a href="homepage" class="nhsuk-breadcrumb__link">Home</a>
       </li>
     </ol>
     <p class="nhsuk-breadcrumb__back">
-      <a href="" class="nhsuk-breadcrumb__backlink">Back to Home</a>
+      <a href="homepage" class="nhsuk-breadcrumb__backlink">Back to Home</a>
     </p>
   </div>
 </nav>
@@ -4055,7 +4054,6 @@
 
 
 
-<!-- JavaScript hack to do nothing if search button or link href="" clicked -->
 {% block pageScripts %}
 <script>
   $( document ).ready(function() {

@@ -1,0 +1,132 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Find your NHS number
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../../homepage">Home</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../../nhs-services">NHS services</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-2" class="nhsuk-breadcrumb__link" href="">Online services</a>
+        </li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back">
+        <a class="nhsuk-breadcrumb__backlink" href="../../nhs-services">
+          <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+          NHS services
+        </a>
+      </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Main content -->
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>Find your NHS number</h1>
+    </div>
+  </div>
+
+  <article>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+        <p>Use this service to get your NHS number.</p>
+        <p>Your <a href="">NHS number</a> is a 10 digit number, like 485 777 3456.</p>
+        <p>You do not need to know your NHS number to use NHS services, but it can be useful to have it.</p>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p>You can also <a href="">get your NHS number in your NHS account</a>.</p>
+        </div>
+
+        <h2>Who can use this service</h2>
+        <p>You can use this service if you live in England. You can also use this service for someone else.</p>
+        <h2>Before you start</h2>
+        <p>We'll ask for your name, date of birth and postcode. We'll send a text, email or letter with your NHS number to you.</p>
+        <p>If you're using this service for someone else, enter their details. They'll be sent their NHS number.</p>
+
+        <a href="" role="button" draggable="false" class="nhsuk-button ">
+          Start now
+        </a>
+
+        <h2>Other ways to get your NHS number</h2>
+        <p>If you cannot get your NHS number online you can:</p>
+        <ul>
+          <li>find it on any letter from the NHS like a prescription or appointment letter</li>
+          <li >call your GP surgery and ask them for your number</li>
+        </ul>
+          <h2><b>About using this service</b></h2>
+          <p>By using this service you are agreeing to our <a href="">terms and conditions</a> and <a href="">privacy policy</a>.</p>
+        </section>
+
+      </div>
+
+    </div>
+  </article>
+
+  <aside class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+        <h2 class="nhsuk-u-font-size-24 nhsuk-u-margin-bottom-4">
+          More in
+            <a href="">Online services</a>
+        </h2>
+
+        <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+          <ul class="beta-nhsuk-navigation-sideways__list">
+
+            <li class="beta-nhsuk-navigation-sideways__item">
+              <a href="">
+                Find your NHS number
+              </a>
+            </li>
+
+            <li class="beta-nhsuk-navigation-sideways__item">
+              <a href="">
+                View your test results
+              </a>
+            </li>
+
+            <li class="beta-nhsuk-navigation-sideways__item">
+              <a href="">
+                About NHS login
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+  <div>
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+      Page last reviewed: 25 January 2021
+      <br>
+      Next review due: 25 January 2024
+    </p>
+  </div>
+
+  </main>
+</div>
+{% endblock %}

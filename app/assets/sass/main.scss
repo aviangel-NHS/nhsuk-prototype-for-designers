@@ -8,77 +8,92 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-  
-
-//@import 'beta';
-@import 'components/sideways-navigation';
-@import 'components/app-brightcove-video';
 
 
-
-
-// FIX: NHS.uk homepage blue button focus states
-.nhsuk-main-wrapper  .app-list-signage li a:focus {
-  background: #ffeb3b;
-  box-shadow: inset 0 -4px 0 0 #212b32;
-  color: #212b32 !important;   //added important to make text black
+//Sub hub page list of links
+.beta-hub-key-links__list-item, .beta-hub-after-key-links>h2, .beta-hub-bottom-content>h2, h4, .nhsuk-heading-s {
+    margin-bottom: 24px;
+    font-size: 1.375rem;
+    line-height: 1.45455;
+    display: block;
+    font-weight: 600;
+    margin-top: 0;
 }
 
-// FIX: NHS.uk footer grey bar
-.nhsuk-footer-container {
-  border-bottom: 10px solid #4c6272;
+.beta-hub-key-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.125em 0;
+}
+
+.beta-hub-related-links {
+    padding-top: 16px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.beta-hub-related-links__list-item {
+    padding-bottom: 16px;
 }
 
 
-
-//My account in header
-
-
-
-// FIX: Search icon in header
-/* ----------!!!! not working search icon not aligned
-.nhsuk-search__submit {
-  background-color: #f0f4f5;
-  border: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 4px;
-  display: block;
-  float: right;
-  font-size: inherit;
-  height: 40px;
-  line-height: inherit;
-  outline: none;
-  padding-left: 9px;
-  padding-top: 5px;
-  width: 44px;
-
-
-  &:hover {
-    background-color: #f0f4f5;
-    border: 0;
-    
-    z-index: 1;
-  }
-}
-*/
-
-// FIX: Search icon in header - Change hover to blue
-/* -----------!!!! Not working - icon background colour not changing from green to blue
-.nhsuk-search__submit:hover {
-  background-color: #002f5c;
-  cursor: pointer;
-}
-*/ 
-
-
-
-
-//missing code compared to live
-@media (min-width: 40.0625em) {
-  .nhsuk-search__input {
-      padding: 0 12px;
-  }
+//Grey line dividing lists of section of list of links on sub hub page and related content below 
+.beta-hub-border-top {
+    border-top: 4px solid rgba(204, 204, 204, .5);
+    padding-top: 48px;
 }
 
+//Grey line dividing lists of results in find a service
+.nhsuk-list.results .results__item {
+    border-top: 1px solid #d8dde0;
+}
+
+//Adding margin to bottom of opening times on find a service
+.nhsuk-list, ul .nhsuk-list, .nhsuk-list .nhsuk-list {
+    margin-bottom: 24px;
+}
+
+//Adding extra space between sections of content
+section+section>h2 {
+    padding-top: 16px;
+}
+
+
+//sideways navigation (bottom content)
+.beta-nhsuk-navigation-sideways__item.is-active {
+    border-left: 4px solid #212b32;
+    color: #212b32;
+    margin-left: -12px;
+    padding-left: 8px;
+}
+
+.beta-nhsuk-navigation-sideways__item {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.beta-nhsuk-navigation-sideways__list {
+    list-style: none;
+    margin: 0;
+    padding-left: 12px;
+}
+
+
+// fix to spacing link on (related content) on bottom of live well hub pages
+.beta-hub-related-links-title>* {
+    margin-bottom: 0;
+}
+
+.beta-hub-related-links {
+    padding-top: 16px;
+}
+
+
+// Forms: Go back link
+.nhsuk-back-link {
+    padding-top: 24px;
+}
+
+.nhsuk-back-link {
+    margin-bottom: 16px;
+}

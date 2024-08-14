@@ -1,0 +1,136 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+  Mental health conditions - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../homepage">Home</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../mental-health">Mental health</a>
+        </li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back">
+        <a class="nhsuk-breadcrumb__backlink" href="../mental-health">
+          <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+          Mental health
+        </a>
+      </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Mental health content -->
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-u-reading-width">
+      <h1>Mental health conditions</h1>
+      <p class="nhsuk-lede-text">
+        Find information and support for your mental health.
+      </p>
+    </div>
+
+
+    <article>
+      <h2 class="nhsuk-u-visually-hidden">Top tasks in Mental health</h2>
+
+      <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+
+        <!-- Get urgent help now for mental health -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                Get urgent help now for mental health
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Depression, including types, self-help and support groups -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                Depression, including types, self-help and support groups
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Anxiety, including types, signs and how to cope -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                Anxiety, including types, signs and how to cope
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <p><a href="">Agoraphobia</a></p>
+        <p><a href="">Anorexia nervosa</a></p>
+        <p><a href="">Antisocial personality disorder</a></p>
+        <p><a href="">Binge eating disorder</a></p>
+        <p><a href="">Bipolar disorder</a></p>
+        <p><a href="">Body dysmorphic disorder</a></p>
+        <p><a href="">Borderline personality disorder</a></p>
+        <p><a href="">Bulimia</a></p>
+        <p><a href="">Claustrophobia</a></p>
+        <p><a href="">Cyclothymia</a></p>
+        <p><a href="">Depression</a></p>
+        <p><a href="">Dissociative disorders</a></p>
+        <p><a href="">Eating disorders</a></p>
+        <p><a href="">Fabricated or induced illness</a></p>
+        <p><a href="">General anxiety disorder</a></p>
+        <p><a href="">Health anxiety</a></p>
+        <p><a href="">Hoarding disorder</a></p>
+        <p><a href="">Munchausen syndrome</a></p>
+        <p><a href="">Obsessive compulsive disorder (OCD)</a></p>
+        <p><a href="">Panic disorder</a></p>
+        <p><a href="">Personality disorder</a></p>
+        <p><a href="">Phobias</a></p>
+        <p><a href="">Postnatal depression</a></p>
+        <p><a href="">Postpartum psychosis</a></p>
+        <p><a href="">Post-traumatic stress disorder (PTSD)</a></p>
+        <p><a href="">Psychosis</a></p>
+        <p><a href="">Psychotic depression</a></p>
+        <p><a href="">Schizophrenia</a></p>
+        <p><a href="">Seasonal affective disorder (SAD)</a></p>
+        <p><a href="">Selective mutism</a></p>
+        <p><a href="">Skin picking disorder</a></p>
+        <p><a href="">Social anxiety (social phobia)</a></p>
+        <p><a href="">Stress</a></p>
+        <p><a href="">Trichotillomania (hair pulling disorder)</a></p>
+      </div>
+
+    </article>
+
+  </main>
+</div>
+
+{% endblock %}
