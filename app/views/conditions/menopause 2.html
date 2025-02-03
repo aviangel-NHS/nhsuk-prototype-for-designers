@@ -1,0 +1,130 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Menopause - NHS
+{% endblock %}
+
+<!-- Breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../homepage">Home</a>
+      </li>
+      <li class="nhsuk-breadcrumb__item">
+        <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../conditions">Health A to Z</a>
+      </li>
+    </ol>
+
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="../conditions">
+        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        Health A to Z
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Main content -->
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper  nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1>
+          <span role="text">Overview
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden"> - </span>
+              Menopause
+            </span>
+          </span>
+        </h1>
+
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+          <ol class="nhsuk-contents-list__list">
+
+            <li class="nhsuk-contents-list__item" aria-current="page">
+              <span class="nhsuk-contents-list__current">Overview</span>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="menopause/symptoms">Symptoms</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="menopause/things-you-can-do">Things you can do</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="menopause/treatment">Treatment</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="menopause/help-and-support">Help and support</a>
+            </li>
+
+          </ol>
+        </nav>
+
+      </div>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <ul>
+            <li>Menopause is when your periods stop due to lower hormone levels. It usually affects women between the ages of 45 and 55, but it can happen earlier.</li>
+            <li>It affects anyone who has periods.</li>
+            <li>Menopause can happen naturally, or for reasons such as surgery to remove the ovaries (oophorectomy) or the uterus (hysterectomy), cancer treatments like chemotherapy, or a genetic reason. Sometimes the reason is unknown.</li>
+            <li>Perimenopause is when you have symptoms of menopause but your periods have not stopped. Perimenopause ends and you reach menopause when you have not had a period for 12 months.</li>
+            <li>Menopause and perimenopause can cause symptoms like anxiety, mood swings, brain fog, hot flushes and irregular periods. These symptoms can start years before your periods stop and carry on afterwards.</li>
+            <li>Menopause and perimenopause symptoms can have a big impact on your life, including relationships and work.</li>
+            <li>There are things you can do to help with symptoms. There are also medicines that can replace the missing hormones and relieve your symptoms.</li>
+          </ul>
+        </section>
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 17 May 2022<br>
+            Next review due: 17 May 2025
+          </p>
+        </div>
+
+        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+          <ul class="nhsuk-list nhsuk-pagination__list">
+
+            <li class="nhsuk-pagination-item--next">
+              <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="menopause/symptoms">
+                <span class="nhsuk-pagination__title">Next</span>
+                <span class="nhsuk-u-visually-hidden">:</span>
+                <span class="nhsuk-pagination__page">Symptoms</span>
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                  <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+        </div>
+      </div>
+    </article>
+
+  </main>
+</div>
+
+{% endblock %}
